@@ -50,3 +50,33 @@ html{
 .div, span, tspan{
     font-family: Pike, sans-serif;
 }
+
+@media (max-width: 252px){
+    html{
+        font-size: 6px;
+    }
+}
+
+@media (max-width: 376px) {
+    html{
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1024px){
+    html{
+        font-size: 16px;
+    }
+}

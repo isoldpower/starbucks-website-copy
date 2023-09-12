@@ -1,7 +1,4 @@
 @media (max-width: 768px){
-    html{
-        font-size: 10px;
-    }
 
     .info-block__content{
         display: flex;
@@ -22,12 +19,42 @@
         width: 100%;
         height: 100%;
     }
+
+    .info-block__text-header{
+        color: inherit;
+        font-family: inherit;
+
+        font-size: 2.4rem;
+        font-weight: 800;
+
+        margin-bottom: 0.5em;
+    }
+
+    .info-block__text{
+        color: inherit;
+        font-family: inherit;
+
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        margin-bottom: 2em;
+    }
+
+    .info-block__button{
+        font-family: inherit;
+        color: inherit;
+        font-size: 1.5rem;
+        box-sizing: content-box;
+
+        border: 1px solid;
+        border-radius: 50px;
+
+        min-width: 35px;
+        min-height: 35px;
+        padding: 0.5em 1em;
+    }
 }
 
 @media (min-width: 768px){
-    html{
-        font-size: 12px;
-    }
 
     .info-block__content{
         display: flex;
@@ -52,13 +79,41 @@
         width: 50%;
         height: 100%;
     }
-}
 
-@media (min-width: 1024px){
-    html{
-        font-size: 16px;
+    .info-block__text-header{
+        color: inherit;
+        font-family: inherit;
+
+        font-size: 3.2rem;
+        font-weight: 800;
+
+        margin-bottom: 0.5em;
+    }
+
+    .info-block__text{
+        color: inherit;
+        font-family: inherit;
+
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        margin-bottom: 2em;
+    }
+
+    .info-block__button{
+        font-family: inherit;
+        color: inherit;
+        font-size: 1rem;
+        box-sizing: content-box;
+
+        border: 1px solid;
+        border-radius: 50px;
+
+        min-width: 35px;
+        min-height: 35px;
+        padding: 0.5em 1em;
     }
 }
+
 
 .info-block__wrapper{
     display: flex;
@@ -92,41 +147,6 @@
     justify-content: center;
 
     font-family: "SoDo Sans", sans-serif;
-}
-
-
-
-.info-block__text-header{
-    color: inherit;
-    font-family: inherit;
-
-    font-size: 3.2rem;
-    font-weight: 800;
-
-    margin-bottom: 0.5em;
-}
-
-.info-block__text{
-    color: inherit;
-    font-family: inherit;
-
-    font-size: 1.4rem;
-    line-height: 2.2rem;
-    margin-bottom: 2em;
-}
-
-.info-block__button{
-    font-family: inherit;
-    color: inherit;
-    font-size: 1rem;
-    box-sizing: content-box;
-
-    border: 1px solid;
-    border-radius: 50px;
-
-    min-width: 35px;
-    min-height: 35px;
-    padding: 0.5em 1em;
 }
 
 .info-block__button:hover{
