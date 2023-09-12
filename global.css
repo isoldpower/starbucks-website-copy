@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Sodo Sans';
+    src: url(fonts/sodo-sans/SoDoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Lander';
+    src: url(fonts/lander/LanderGrande-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Pike';
+    src: url(fonts/pike/Pike-Regular.otf)
+}
+
+html{
+    --green: #00754a;
+    --red: #b04a5a;
+    --yellow: #d69a2d;
+    --dark-green: #1e3932;
+    --light-yellow: #d7da58;
+    --text-color: black;
+    --inversed-text-color: white;
+}
+
+.green{
+    background-color: var(--green);
+}
+
+.red{
+    background-color: var(--red);
+}
+
+.yellow{
+    background-color: var(--yellow);
+}
+
+.dark-green{
+    background-color: var(--dark-green);
+}
+
+.light-yellow{
+    background-color: var(--light-yellow);
+}
+
+.h1, h2, h3, h4, h5, h6{
+    font-family: 'SoDo Sans', sans-serif;
+}
+
+.div, span, tspan{
+    font-family: Pike, sans-serif;
+}
