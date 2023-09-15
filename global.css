@@ -13,13 +13,18 @@
     src: url(fonts/pike/Pike-Regular.otf)
 }
 
+@font-face {
+    font-family: 'Sodo Sans Bold';
+    src: url(fonts/sodo-sans/SoDoSans-Bold.ttf);
+}
+
 html{
     --green: #00754a;
     --red: #b04a5a;
     --yellow: #d69a2d;
     --dark-green: #1e3932;
     --light-yellow: #d7da58;
-    --text-color: black;
+    --text-color: rgba(0, 0, 0, 0.87);
     --inversed-text-color: white;
 }
 
@@ -43,12 +48,12 @@ html{
     background-color: var(--light-yellow);
 }
 
-.h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6{
     font-family: 'SoDo Sans', sans-serif;
 }
 
-.div, span, tspan{
-    font-family: Pike, sans-serif;
+div, span, tspan{
+    font-family: "SoDo Sans", sans-serif;
 }
 
 @media (max-width: 252px){
@@ -75,7 +80,7 @@ html{
     }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1025px){
     html{
         font-size: 16px;
     }
