@@ -26,6 +26,7 @@
 html{
     --green: #00754a;
     --red: #b04a5a;
+    --dark-red: #76232f;
     --yellow: #d69a2d;
     --dark-green: #1e3932;
     --light-yellow: #d7da58;
@@ -41,6 +42,10 @@ html{
     background-color: var(--red);
 }
 
+.dark-red{
+    background-color: var(--dark-red);
+}
+
 .yellow{
     background-color: var(--yellow);
 }
@@ -54,11 +59,11 @@ html{
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: 'SoDo Sans', sans-serif;
+    font-family: 'SoDo Sans', sans-serif !important;
 }
 
 div, span, tspan{
-    font-family: "SoDo Sans", sans-serif;
+    font-family: "SoDo Sans Light", sans-serif !important;
 }
 
 @media (max-width: 252px){

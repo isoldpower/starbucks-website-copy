@@ -140,6 +140,7 @@
 }
 
 .footer__supplies-separator{
+    display: var(--supplies-separator-display);
     font-family: inherit;
     height: 50%;
     margin: 0 1.6rem;
