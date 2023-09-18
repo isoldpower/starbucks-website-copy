@@ -18,6 +18,11 @@
     src: url(fonts/sodo-sans/SoDoSans-Bold.ttf);
 }
 
+@font-face {
+    font-family: 'Sodo Sans Light';
+    src: url(fonts/sodo-sans/SoDoSans-Light.ttf);
+}
+
 html{
     --green: #00754a;
     --red: #b04a5a;
