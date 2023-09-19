@@ -60,16 +60,15 @@
     display: var(--navigation-display);
     align-items: center;
 
-    margin: 0 1em;
+    margin: 0 var(--space-4);
 }
 
 .header__navigation-button-text{
     font-family: "Sodo Sans Bold", sans-serif!important;
 
     color: var(--text-color);
-    font-size: 14.4px;
-    letter-spacing: 0.1em;
-    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.1rem;
 }
 
 .header__navigation-button:hover .header__navigation-button-text{
@@ -86,7 +85,7 @@
     display: flex;
 
     width: 54px;
-    margin: 0 1em;
+    margin: 0 var(--space-4);
 }
 
 .header__navigation-image svg{
@@ -154,7 +153,7 @@
 
     width: 80%;
     height: 100%;
-    padding: 4em;
+    padding: var(--space-11);
     background-color: white;
     left: var(--full-screen-navigation-left);
 }
@@ -170,9 +169,9 @@
     display: flex;
     justify-content: space-between;
 
-    font-size: 1.9rem;
+    font-size: var(--font-size-7);
     color: black;
-    margin: 1em;
+    margin: var(--space-4);
 }
 
 .expand-arrow{

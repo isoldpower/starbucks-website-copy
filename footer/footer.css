@@ -4,18 +4,18 @@
 
         --section-height: auto;
         --section-width: 190px;
-        --section-margin-left: 2.8rem;
+        --section-margin-left: var(--space-8);
         --section-justify: left;
-        --section-text-padding: 0.35rem 0;
-        --section-text-margin-bottom: 0.8rem;
+        --section-text-padding: var(--space-1) 0;
+        --section-text-margin-bottom: var(--space-3);
 
-        --header-margin: 0 0 2.4rem 0;
-        --header-font-size: 1.15rem;
+        --header-margin: 0 0 var(--space-6) 0;
+        --header-font-size: var(--font-size-3);
         --expand-arrow-display: none;
 
         --supplies-separator-display: flex;
         --supply-flex-direction: row;
-        --supply-font-size: 1rem;
+        --supply-font-size: var(--font-size-2);
         --supply-text-align: center;
         --supply-text-margin: 0;
     }
@@ -27,20 +27,20 @@
 
         --section-height: 0;
         --section-width: auto;
-        --section-margin-left: 3em;
+        --section-margin-left: var(--space-8);
         --section-justify: space-between;
-        --section-text-padding: 0.35rem 0;
-        --section-text-margin-bottom: 0.8rem;
+        --section-text-padding: var(--space-1) 0;
+        --section-text-margin-bottom: var(--space-3);
 
-        --header-margin: 1.2rem 0;
-        --header-font-size: 1.5rem;
+        --header-margin: var(--space-4) 0;
+        --header-font-size: var(--font-size-5);
         --expand-arrow-display: inline-block;
 
         --supplies-separator-display: none;
         --supply-flex-direction: column;
-        --supply-font-size: 1.5rem;
+        --supply-font-size: var(--font-size-5);
         --supply-text-align: left;
-        --supply-text-margin: 0.6rem 0;
+        --supply-text-margin: var(--space-1) 0;
     }
 }
 
@@ -48,7 +48,7 @@
     display: flex;
     flex-direction: var(--footer-flex-direction);
 
-    padding: 2rem 0;
+    padding: var(--space-6) 0;
     box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1),
     0 -2px 2px rgba(0, 0, 0, 0.06);
 }
@@ -101,13 +101,13 @@
 .footer__separator{
     display: var(--supplies-separator-display);
 
-    margin: 0 2.8em;
+    margin: 0 var(--space-8);
     height: 2px;
     border-top: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .footer__follow-wrapper{
-    padding: 2rem 2.8rem;
+    padding: var(--space-6) var(--space-8);
     display: flex;
     flex-direction: column;
 }
@@ -118,7 +118,7 @@
 }
 
 .footer__media-link{
-    margin-right: 1.1rem;
+    margin-right: var(--space-4);
 }
 
 .footer__supplies-wrapper{
@@ -127,7 +127,7 @@
     align-content: center;
     flex-direction: var(--supply-flex-direction);
 
-    margin: 1.8em 0;
+    margin: var(--space-6) 0;
     font-family: "Sodo Sans Light", sans-serif;
 
     font-size: var(--supply-font-size);
@@ -143,5 +143,5 @@
     display: var(--supplies-separator-display);
     font-family: inherit;
     height: 50%;
-    margin: 0 1.6rem;
+    margin: 0 var(--space-5);
 }

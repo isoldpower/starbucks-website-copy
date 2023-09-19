@@ -1,22 +1,22 @@
 @media (max-width: 768px){
     body{
-        --content-margin: 1em 0;
+        --content-margin: var(--space-4) 0;
         --content-flex-direction: column;
         --info-block-text-width: 100%;
         --info-block-image-width: 100%;
-        --header-font-size: 2.4rem;
-        --button-font-size: 1.5rem;
+        --header-font-size: var(--font-size-10);
+        --button-font-size: var(--font-size-5);
     }
 }
 
 @media (min-width: 769px){
     body{
-        --content-margin: 1em;
+        --content-margin: var(--space-4);
         --content-flex-direction: row;
         --info-block-text-width: 50%;
         --info-block-image-width: 50%;
-        --header-font-size: 3.2rem;
-        --button-font-size: 1rem;
+        --header-font-size: var(--font-size-12);
+        --button-font-size: var(--font-size-2);
     }
 
     .reversed{
@@ -26,14 +26,14 @@
 
 @media (max-width: 1024px){
     .text-section{
-        --text-section-font-size: 1rem;
+        --text-section-font-size: var(--font-size-2);
         --text-section-width: 90%;
     }
 }
 
 @media (min-width: 1025px) {
     .text-section{
-        --text-section-font-size: 0.9rem;
+        --text-section-font-size: var(--font-size-1);
         --text-section-width: 50%;
     }
 }
@@ -58,7 +58,7 @@
     align-content: center;
 
     width: var(--info-block-text-width);
-    padding: 2em;
+    padding: var(--space-6);
 }
 
 .info-block__text-small-wrapper{
@@ -78,15 +78,15 @@
 
     font-size: var(--header-font-size);
     font-weight: 800;
-    margin-bottom: 0.5em;
+    margin-bottom: var(--space-2);
 }
 
 .info-block__text{
     color: inherit;
     font-family: inherit;
 
-    font-size: 1.5rem;
-    margin-bottom: 3rem;
+    font-size: var(--font-size-6);
+    margin-bottom: var(--space-6);
 }
 
 .info-block__button{
@@ -101,7 +101,7 @@
 
     min-width: 35px;
     min-height: 35px;
-    padding: 0.5em 1em;
+    padding: var(--space-2) var(--space-4);
 }
 
 .info-block__button:hover{
@@ -136,7 +136,7 @@
     align-content: center;
 
     width: 100%;
-    margin: 3em 0;
+    margin: var(--space-8) 0;
 }
 
 .text-section div{
@@ -147,10 +147,10 @@
 }
 
 .small-block .info-block__text-small-wrapper .info-block__text-header{
-    font-size: 1.5rem;
-    margin-bottom: 1em;
+    font-size: var(--font-size-6);
+    margin-bottom: var(--space-4);
 }
 
 .small-block .info-block__text-small-wrapper .info-block__text{
-    font-size: 1.2rem;
+    font-size: var(--font-size-3)
 }
