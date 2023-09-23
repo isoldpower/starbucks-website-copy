@@ -44,6 +44,12 @@
     justify-content: center;
 }
 
+.space-block{
+    display: flex;
+    position: relative;
+    height: var(--space-4);
+}
+
 .info-block__content{
     display: flex;
     flex-direction: var(--content-flex-direction);

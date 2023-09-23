@@ -23,7 +23,13 @@
     src: url(fonts/sodo-sans/SoDoSans-Light.ttf);
 }
 
+@font-face{
+    font-family: 'Sodo Sans Semibold';
+    src: url(fonts/sodo-sans/SoDoSans-SemiBold.ttf);
+}
+
 html{
+    font-size: 10px;
     --green: #00754a;
     --red: #b04a5a;
     --dark-red: #76232f;
@@ -32,31 +38,28 @@ html{
     --light-yellow: #d7da58;
     --text-color: rgba(0, 0, 0, 0.87);
     --inversed-text-color: white;
-
-    --font-size-1: 0.9rem;
-    --font-size-2: 1rem;
-    --font-size-3: 1.1rem;
-    --font-size-4: 1.3rem;
-    --font-size-5: 1.4rem;
-    --font-size-6: 1.6rem;
-    --font-size-7: 1.9rem;
-    --font-size-8: 2.0rem;
-    --font-size-9: 2.2rem;
-    --font-size-10: 2.4rem;
-    --font-size-11: 2.8rem;
-    --font-size-12: 3.2rem;
-    --font-size-13: 3.6rem;
-    --font-size-14: 5.0rem;
-
-    --space-1: 0.3em;
-    --space-2: 0.5em;
-    --space-3: 0.8em;
-    --space-4: 1.0em;
-    --space-5: 1.6em;
-    --space-6: 2.0em;
-    --space-8: 2.8em;
-    --space-9: 3.2em;
-    --space-11: 4em;
+    --font-size-1: 1.3rem;
+    --font-size-2: 1.4rem;
+    --font-size-3: 1.6rem;
+    --font-size-4: 1.9rem;
+    --font-size-5: 2rem;
+    --font-size-6: 2.2rem;
+    --font-size-7: 2.4rem;
+    --font-size-8: 2.8rem;
+    --font-size-9: 3.6rem;
+    --font-size-10: 5.0rem;
+    --space-1: 0.4rem;
+    --space-2: 0.8rem;
+    --space-3: 1.6rem;
+    --space-4: 2.4rem;
+    --space-5: 3.2rem;
+    --space-6: 4rem;
+    --space-7: 4.8rem;
+    --space-8: 5.6rem;
+    --space-9: 6.4rem;
+    --gutter-small: 1.6rem;
+    --gutter-medium: 2.4rem;
+    --gutter-large: 4rem;
 }
 
 .green{
@@ -91,32 +94,21 @@ div, span, tspan{
     font-family: "SoDo Sans Light", sans-serif !important;
 }
 
-@media (max-width: 252px){
-    html{
-        font-size: 6px;
-    }
+.text-upper{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
-@media (max-width: 376px) {
-    html{
-        font-size: 8px;
-    }
+.text-bold{
+    font-family: "Sodo Sans Bold", sans-serif;
 }
 
-@media (max-width: 768px){
-    html{
-        font-size: 10px;
-    }
+.text-semibold{
+    font-family: "Sodo Sans Semibold", sans-serif !important;
+    font-weight: 100;
 }
 
-@media (min-width: 768px) {
-    html {
-        font-size: 12px;
-    }
-}
-
-@media (min-width: 1025px){
-    html{
-        font-size: 16px;
-    }
+.no-decoration{
+    text-decoration: none;
+    color: var(--text-color);
 }
