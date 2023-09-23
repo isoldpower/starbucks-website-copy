@@ -28,6 +28,10 @@
     src: url(fonts/sodo-sans/SoDoSans-SemiBold.ttf);
 }
 
+*{
+    letter-spacing: -0.02em;
+}
+
 html{
     font-size: 10px;
     --green: #00754a;
@@ -36,6 +40,15 @@ html{
     --yellow: #d69a2d;
     --dark-green: #1e3932;
     --light-yellow: #d7da58;
+    --black-10: rgba(0, 0, 0, 0.1);
+    --black-20: rgba(0, 0, 0, 0.2);
+    --black-30: rgba(0, 0, 0, 0.3);
+    --black-40: rgba(0, 0, 0, 0.4);
+    --black-50: rgba(0, 0, 0, 0.5);
+    --black-60: rgba(0, 0, 0, 0.6);
+    --black-70: rgba(0, 0, 0, 0.7);
+    --black-80: rgba(0, 0, 0, 0.8);
+    --black-90: rgba(0, 0, 0, 0.9);
     --text-color: rgba(0, 0, 0, 0.87);
     --inversed-text-color: white;
     --font-size-1: 1.3rem;
@@ -60,6 +73,13 @@ html{
     --gutter-small: 1.6rem;
     --gutter-medium: 2.4rem;
     --gutter-large: 4rem;
+}
+
+body{
+    letter-spacing: -0.01em;
+    line-height: 1.5;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "calt";
 }
 
 .green{
@@ -111,4 +131,11 @@ div, span, tspan{
 .no-decoration{
     text-decoration: none;
     color: var(--text-color);
+}
+
+.absolute-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
