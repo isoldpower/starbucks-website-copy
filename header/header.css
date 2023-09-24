@@ -8,6 +8,7 @@
         --navigation-font-size: var(--font-size-1);
         --functional-buttons-display: none;
         --hamburger-display: flex;
+        --hamburger-margin: var(--gutter-small);
     }
 }
 
@@ -19,6 +20,7 @@
         --logo-margin-vertical: var(--space-3);
         --logo-margin-right: var(--space-3);
         --navigation-font-size: var(--font-size-1);
+        --hamburger-margin: var(--gutter-medium);
     }
 }
 
@@ -32,6 +34,7 @@
         --navigation-font-size: var(--font-size-2);
         --functional-buttons-display: flex;
         --hamburger-display: none;
+        --hamburger-margin: var(--gutter-medium);
     }
 }
 
@@ -163,7 +166,7 @@
     color: var(--text-color);
     border-radius: 50px;
 
-    padding: 5px 16px;
+    padding: 7px 16px;
 }
 
 .header__button:hover{
@@ -208,8 +211,8 @@
     width: 44px;
     height: 100%;
 
-    margin-left: var(--gutter-small);
-    margin-right: var(--gutter-small);
+    margin-left: var(--hamburger-margin);
+    margin-right: var(--hamburger-margin);
 }
 
 .header__hamburger-center{
@@ -268,7 +271,7 @@
     padding-top: var(--space-5);
     top: var(--header-height);
     height: calc(100% - var(--header-height));
-    right: 0;
+    right: -80%;
     width: 80%;
     background-color: white;
 }

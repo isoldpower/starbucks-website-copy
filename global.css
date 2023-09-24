@@ -29,7 +29,8 @@
 }
 
 *{
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
 }
 
 html{
@@ -40,6 +41,7 @@ html{
     --yellow: #d69a2d;
     --dark-green: #1e3932;
     --light-yellow: #d7da58;
+    --pink: #e31c79;
     --black-10: rgba(0, 0, 0, 0.1);
     --black-20: rgba(0, 0, 0, 0.2);
     --black-30: rgba(0, 0, 0, 0.3);
@@ -104,6 +106,10 @@ body{
 
 .light-yellow{
     background-color: var(--light-yellow);
+}
+
+.pink{
+    background-color: var(--pink);
 }
 
 h1, h2, h3, h4, h5, h6{
