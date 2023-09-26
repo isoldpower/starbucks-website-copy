@@ -1,96 +1,100 @@
 @media (max-width: 374px){
     header{
-        --header-padding: var(--gutter-small);
-        --header-height: 64px;
-        --logo-size: 32px;
-        --logo-margin-vertical: var(--space-3);
-        --logo-margin-right: var(--space-3);
-        --navigation-font-size: var(--font-size-1);
-        --functional-buttons-display: none;
-        --hamburger-display: flex;
-        --hamburger-margin: var(--gutter-small);
+        --header__padding: var(--gutter-small);
+        --header__height: 64px;
+
+        --logo__size: 32px;
+        --logo__margin-vertical: var(--space-3);
+        --logo__margin-right: var(--space-3);
+
+        --navigation__font-size: var(--font-size-1);
+        --hamburger-icon__margin: var(--gutter-small);
     }
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
     header{
-        --header-padding: var(--gutter-small);
-        --header-height: 72px;
-        --logo-size: 40px;
-        --logo-margin-vertical: var(--space-3);
-        --logo-margin-right: var(--space-3);
-        --navigation-font-size: var(--font-size-1);
-        --hamburger-margin: var(--gutter-medium);
+        --header__padding: var(--gutter-small);
+        --header__height: 72px;
+
+        --logo__size: 40px;
+        --logo__margin-vertical: var(--space-3);
+        --logo__margin-right: var(--space-3);
+
+        --navigation__font-size: var(--font-size-1);
+        --hamburger-icon__margin: var(--gutter-medium);
     }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
     header{
-        --header-padding: var(--gutter-medium);
-        --header-height: 83px;
-        --logo-size: 51px;
-        --logo-margin-vertical: var(--space-3);
-        --logo-margin-right: var(--space-4);
-        --navigation-font-size: var(--font-size-2);
-        --functional-buttons-display: flex;
-        --hamburger-display: none;
-        --hamburger-margin: var(--gutter-medium);
+        --header__padding: var(--gutter-medium);
+        --header__height: 83px;
+
+        --logo__size: 51px;
+        --logo__margin-vertical: var(--space-3);
+        --logo__margin-right: var(--space-4);
+
+        --navigation__font-size: var(--font-size-2);
+        --hamburger-icon__margin: var(--gutter-medium);
     }
 }
 
 @media (min-width: 1024px) {
     header{
-        --header-padding: var(--gutter-large);
-        --header-height: 99px;
-        --logo-size: 51px;
-        --logo-margin-vertical: var(--space-4);
-        --logo-margin-right: var(--space-6);
-        --navigation-font-size: var(--font-size-2);
-        --functional-buttons-display: flex;
-        --hamburger-display: none;
+        --header__padding: var(--gutter-large);
+        --header__height: 99px;
+
+        --logo__size: 51px;
+        --logo__margin-vertical: var(--space-4);
+        --logo__margin-right: var(--space-6);
+        
+        --navigation__font-size: var(--font-size-2);
+        --hamburger-icon__display: none;
     }
 }
 
 @media (max-width: 787px){
     header{
-        --functional-buttons-display: none;
-        --hamburger-display: flex;
+        --functional-buttons__display: none;
+        --hamburger-icon__display: flex;
     }
 }
 
 @media (min-width: 788px) {
     header{
-        --functional-buttons-display: flex;
-        --hamburger-display: none;
+        --functional-buttons__display: flex;
+        --hamburger-icon__display: none;
     }
 }
 
 
-/* HEADER ---- HEADER ---- HEADER */
 
 .global-header{
     z-index: 3;
     position: relative;
-    box-shadow: 0 1px 3px rgba(0,0,0,.1),0 2px 2px rgba(0,0,0,.06),0 0 2px rgba(0,0,0,.07);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1),
+                0 2px 2px rgba(0, 0, 0, 0.06),
+                0 0 2px rgba(0, 0, 0, 0.07);
 }
 
 .header__wrapper{
     display: flex;
 
-    height: var(--header-height);
-    padding-left: var(--header-padding);
-    padding-right: var(--header-padding);
+    height: var(--header__height);
+    padding-left: var(--header__padding);
+    padding-right: var(--header__padding);
 }
 
 .header__logo{
-    width: var(--logo-size);
-    margin-right: var(--logo-margin-right);
-    margin-top: var(--logo-margin-vertical);
-    margin-bottom: var(--logo-margin-vertical);
+    width: var(--logo__size);
+    margin-right: var(--logo__margin-right);
+    margin-top: var(--logo__margin-vertical);
+    margin-bottom: var(--logo__margin-vertical);
 }
 
 .header__functional-buttons{
-    display: var(--functional-buttons-display);
+    display: var(--functional-buttons__display);
     flex-grow: 1;
 }
 
@@ -110,7 +114,7 @@
 }
 
 .header__navigation-button a{
-    font-size: var(--navigation-font-size);
+    font-size: var(--navigation__font-size);
     color: var(--text-color);
 }
 
@@ -122,7 +126,7 @@
     display: flex;
     flex-shrink: 0;
 
-    margin-left: auto!important;
+    margin-left: auto !important;
     font-size: var(--font-size-2);
 }
 
@@ -170,7 +174,7 @@
 }
 
 .header__button:hover{
-    background: rgba(0, 0, 0, 0.1);
+    background: var(--black-10);
 }
 
 .mr-3{
@@ -192,17 +196,17 @@
 
     left: 0;
     width: 100%;
-    top: var(--header-height);
-    height: calc(100% - var(--header-height));
+    top: var(--header__height);
+    height: calc(100% - var(--header__height));
 
     background-color: black;
     opacity: 0.38;
 }
 
-/* HAMBURGER ICON ---- HAMBURGER ICON ---- HAMBURGER ICON */
+
 
 .header__hamburger-wrapper{
-    display: var(--hamburger-display);
+    display: var(--hamburger-icon__display);
     position: absolute;
     bottom: 0;
     right: 0;
@@ -211,8 +215,8 @@
     width: 44px;
     height: 100%;
 
-    margin-left: var(--hamburger-margin);
-    margin-right: var(--hamburger-margin);
+    margin-left: var(--hamburger-icon__margin);
+    margin-right: var(--hamburger-icon__margin);
 }
 
 .header__hamburger-center{
@@ -224,7 +228,7 @@
 .header__hamburger{
     position: relative;
     color: var(--black-60);
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .header__hamburger:hover .hover-effect{
@@ -263,14 +267,14 @@
     transition: all 0.2s ease-out;
 }
 
-/* HAMBURGER MENU ---- HAMBURGER MENU ---- HAMBURGER MENU */
+
 
 .hamburger-menu{
     position: fixed;
 
     padding-top: var(--space-5);
-    top: var(--header-height);
-    height: calc(100% - var(--header-height));
+    top: var(--header__height);
+    height: calc(100% - var(--header__height));
     right: -80%;
     width: 80%;
     background-color: white;
@@ -278,7 +282,6 @@
 
 .hamburger-menu__button{
     display: flex;
-    font-family: "Sodo Sans", sans-serif !important;
     font-size: var(--font-size-4);
     padding: var(--space-3) var(--space-5);
     width: 100%;
@@ -287,10 +290,6 @@
 .hamburger-menu__button-expandable{
     flex-direction: row-reverse;
     justify-content: space-between;
-}
-
-.hamburger-menu__button-expandable span{
-    font-family: inherit !important;
 }
 
 .hamburger-menu__expand-arrow{
