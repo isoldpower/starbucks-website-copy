@@ -1,0 +1,6 @@
+.TEST{
+    display: flex;
+    background-color: var(--green);
+    color: var(--inversed-text-color);
+    font-size: var(--font-size-10);
+}

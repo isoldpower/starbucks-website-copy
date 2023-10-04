@@ -1,0 +1,185 @@
+@media (max-width: 767px){
+    main{
+        --offline-indicator__font-size: var(--font-size-2);
+        --meta-data__padding-right: var(--space-3);
+        --meta-data__padding-left: var(--space-3);
+        --meta-data__height: 74px;
+
+        --country-link__padding-bottom: var(--space-1);
+        --multiline-picker__display: none;
+        --singleline-picker__display: auto;
+        --picker__font-size: var(--font-size-2);
+        --cart__margin-y: var(--space-2);
+    }
+
+    .country-picker__wrapper{
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    main{
+        --offline-indicator__font-size: var(--font-size-3);
+        --meta-data__padding-right: var(--space-3);
+        --meta-data__padding-left: 99px;
+        --meta-data__height: 74px;
+
+        --country-link__padding-bottom: var(--space-1);
+        --multiline-picker__display: none;
+        --singleline-picker__display: auto;
+        --picker__font-size: var(--font-size-3);
+        --cart__margin-y: var(--space-2);
+    }
+}
+
+@media (min-width: 1024px) {
+    main{
+        --offline-indicator__font-size: var(--font-size-3);
+        --meta-data__padding-right: 9%;
+        --meta-data__padding-left: 400px;
+        --meta-data__height: 94px;
+
+        --country-link__padding-bottom: var(--space-2);
+        --multiline-picker__display: flex;
+        --singleline-picker__display: none;
+        --picker__font-size: var(--font-size-3);
+        --cart__margin-y: 0;
+    }
+}
+
+@media (min-width: 1280px){
+    main{
+        --meta-data__padding-right: 18%;
+    }
+}
+
+.notifications{
+    position: relative;
+}
+
+.notifications-layer{
+    position: relative;
+}
+
+.offline-indicator{
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+
+    padding: var(--space-3);
+    border-radius: var(--space-1);
+    background-color: var(--dark-green);
+
+    font-size: var(--offline-indicator__font-size);
+    color: white;
+}
+
+.bottom-drawer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.meta-data__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-right: var(--meta-data__padding-right);
+    padding-left: var(--meta-data__padding-left);
+
+    background-color: var(--dark-green);
+    color: var(--inversed-text-color);
+    height: var(--meta-data__height);
+}
+
+.meta-data__country-picker{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+}
+
+.country-picker__link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-width: 24rem;
+    padding-bottom: var(--country-link__padding-bottom);
+    box-shadow: inset 0 -1.5px 0 rgba(255, 255, 255, 0.3);
+}
+
+.multiline-picker{
+    display: var(--multiline-picker__display);
+    flex-direction: column;
+
+    color: white;
+    font-size: var(--font-size-3);
+    line-height: 1.5;
+}
+
+.singleline-picker{
+    display: var(--singleline-picker__display);
+
+    color: hsla(0, 0%, 100%, 0.7);
+    font-size: var(--picker__font-size);
+    line-height: 1.5;
+}
+
+.country-picker__call-to-action{
+    font-family: "Sodo Sans Bold", sans-serif;
+    font-weight: 100;
+
+    color: inherit;
+    line-height: inherit;
+    font-size: inherit;
+}
+
+.country-picker__explanation{
+    color: hsla(0, 0%, 100%, 0.7);
+    line-height: inherit;
+    font-size: inherit;
+}
+
+.country-picker__expand-arrow{
+    vertical-align: middle;
+    color: white;
+    margin-left: var(--space-2);
+}
+
+.meta-data__cart-wrapper{
+    position: relative;
+
+    margin-top: var(--cart__margin-y);
+    margin-bottom: var(--cart__margin-y);
+    margin-left: var(--space-4);
+}
+
+.meta-data__cart-button{
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.meta-data__cart-icon{
+    display: inline-block;
+
+    height: 32px;
+    width: 32px;
+}
+
+.meta-data__cart-fulfill{
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+    position: absolute;
+    visibility: hidden;
+}

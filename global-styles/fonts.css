@@ -1,31 +1,38 @@
 @font-face {
     font-family: 'Sodo Sans';
-    src: url(../imports/fonts/sodo-sans/SoDoSans-Regular.ttf);
+    src: url(/imports/fonts/sodo-sans/SoDoSans-Regular.ttf);
+    src: local("Sodo Sans"), url("/imports/fonts/sodo-sans/SoDoSans-Regular.ttf");
 }
 
 @font-face {
     font-family: 'Lander';
-    src: url(../imports/fonts/Lander/LanderGrande-Regular.otf);
+    src: url(/imports/fonts/Lander/LanderGrande-Regular.otf);
+    src: local("Lander"), url("/imports/fonts/lander/LanderGrande-Regular.otf");
 }
 
 @font-face {
     font-family: 'Pike';
-    src: url(../imports/fonts/pike/Pike-Regular.otf)
+    src: url(/imports/fonts/pike/Pike-Regular.otf);
+    src: local("Pike"), url("/imports/fonts/pike/Pike-Regular.otf");
 }
 
 @font-face {
     font-family: 'Sodo Sans Bold';
-    src: url(../imports/fonts/sodo-sans/SoDoSans-Bold.ttf);
+    src: url(/imports/fonts/sodo-sans/SoDoSans-Bold.ttf);
+    src: local("Sodo Sans Bold"), url("/imports/fonts/sodo-sans/SoDoSans-Bold.ttf");
 }
 
 @font-face {
     font-family: 'Sodo Sans Light';
-    src: url(../imports/fonts/sodo-sans/SoDoSans-Light.ttf);
+    src: url(/imports/fonts/sodo-sans/SoDoSans-Light.ttf);
+    src: local("Sodo Sans Light"), url("/imports/fonts/sodo-sans/SoDoSans-Light.ttf");
 }
 
 @font-face{
     font-family: 'Sodo Sans Semibold';
-    src: url(../imports/fonts/sodo-sans/SoDoSans-SemiBold.ttf);
+    font-display: swap;
+    src: url(/imports/fonts/sodo-sans/SoDoSans-SemiBold.ttf);
+    src: local("Sodo Sans Semibold"), url("/imports/fonts/sodo-sans/SoDoSans-SemiBold.ttf");
 }
 
 *{

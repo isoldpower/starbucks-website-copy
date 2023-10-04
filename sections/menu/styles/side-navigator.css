@@ -1,0 +1,44 @@
+@media (max-width: 767px){
+    main{
+        --side-nav__display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    main{
+        --side-nav__display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    main{
+        --side-nav__display: flex;
+    }
+}
+
+.menu-content__side-navigator{
+    display: var(--side-nav__display);
+    flex-basis: var(--menu__side-nav__width);
+
+    padding: var(--space-3) 0;
+}
+
+.side-navigator__section{
+    margin-top: var(--space-4);
+}
+
+.side-navigator__section-header{
+    font-family: "Sodo Sans Semibold", sans-serif;
+    font-size: var(--font-size-4);
+    line-height: 1.5;
+}
+
+.side-navigator__link-wrapper{
+    margin: var(--space-3) 0;
+}
+
+.side-navigator__link{
+    font-size: var(--font-size-3);
+    line-height: 1.5;
+    color: var(--soft-text-color);
+}

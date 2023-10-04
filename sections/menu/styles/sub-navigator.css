@@ -1,0 +1,72 @@
+@media (max-width: 479px){
+    main{
+        --sub-nav__position: relative;
+        --sub-nav__padding-left: var(--space-3);
+        --sub-nav__padding-right: var(--space-3);
+        --sub-nav__margin-right: var(--space-3);
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+    main{
+        --sub-nav__position: relative;
+        --sub-nav__padding-left: var(--space-3);
+        --sub-nav__padding-right: var(--space-3);
+        --sub-nav__margin-right: var(--space-5);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    main{
+        --sub-nav__position: relative;
+        --sub-nav__padding-left: var(--logo__offset-medium);
+        --sub-nav__padding-right: var(--space-4);
+        --sub-nav__margin-right: var(--space-5);
+    }
+}
+
+@media (min-width: 1024px) {
+    main{
+        --sub-nav__position: sticky;
+        --sub-nav__padding-left: var(--logo__offset-large);
+        --sub-nav__padding-right: var(--space-6);
+        --sub-nav__margin-right: var(--space-5);
+    }
+}
+
+.sub-navigator__wrapper{
+    z-index: 2;
+    position: var(--sub-nav__position);
+    display: flex;
+
+    border-bottom: 1px solid #dbd9d7;
+    background-color: #f9f9f9;
+    padding-left: var(--sub-nav__padding-left);
+    padding-right: var(--sub-nav__padding-right);
+    top: 0;
+}
+
+.sub-navigator__buttons-list{
+    display: flex;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.sub-navigator__button{
+    display: block;
+    position: relative;
+    line-height: 1.5;
+    font-size: var(--font-size-1);
+    margin-right: var(--sub-nav__margin-right);
+    padding: var(--space-3) 0;
+    white-space: nowrap;
+}
+
+.sub-navigator__button.active::before{
+    border-bottom: 1px solid;
+    bottom: 12px;
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
