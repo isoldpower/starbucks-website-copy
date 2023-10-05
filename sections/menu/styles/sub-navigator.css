@@ -59,6 +59,7 @@
     font-size: var(--font-size-1);
     margin-right: var(--sub-nav__margin-right);
     padding: var(--space-3) 0;
+    color: var(--text-color);
     white-space: nowrap;
 }
 

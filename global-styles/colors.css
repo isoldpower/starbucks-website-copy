@@ -15,6 +15,7 @@ html{
     --dark-green: #1e3932;
     --light-yellow: #d7da58;
     --pink: #e31c79;
+    --soft-pink: #d5a286;
 }
 
 .green{
@@ -43,4 +44,16 @@ html{
 
 .pink{
     background-color: var(--pink);
+}
+
+.soft-pink{
+    background-color: var(--soft-pink);
+}
+
+.white-text{
+    color: var(--inversed-text-color) !important;
+}
+
+.black-text{
+    color: var(--text-color) !important;
 }

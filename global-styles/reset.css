@@ -23,6 +23,10 @@ a:hover  {
 
 /* Common */
 
+html{
+    overflow-x: hidden;
+}
+
 aside, nav, footer, header, section, main {
     display: block;
 }

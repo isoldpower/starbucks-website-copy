@@ -1,0 +1,58 @@
+@media (max-width: 374px) {
+    main{
+        --header-section__font-size: var(--font-size-7);
+        --header-section__padding-x: var(--space-3);
+        --header-section__max-width: 100%;
+        --header-section__letter-spacing: 1px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    main{
+        --header-section__font-size: var(--font-size-8);
+        --header-section__padding-x: var(--space-3);
+        --header-section__max-width: 100%;
+        --header-section__letter-spacing: 1px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    main{
+        --header-section__font-size: var(--font-size-8);
+        --header-section__padding-x: var(--space-4);
+        --header-section__max-width: 60%;
+        --header-section__letter-spacing: 1px;
+    }
+}
+
+@media (min-width: 1024px) {
+    main{
+        --header-section__font-size: var(--font-size-10);
+        --header-section__padding-x: var(--space-6);
+        --header-section__max-width: 60%;
+        --header-section__letter-spacing: 2px;
+    }
+}
+
+.header-section__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+}
+
+.header-section{
+    display: flex;
+
+    max-width: var(--header-section__max-width);
+    padding: 0 var(--header-section__padding-x);
+}
+
+.header-section__text{
+    color: #1e3932;
+    font-family: "Sodo Sans Bold", sans-serif;
+    font-size: var(--header-section__font-size);
+    letter-spacing: var(--header-section__letter-spacing);
+}
