@@ -1,0 +1,23 @@
+@media (min-width: 1px){
+    .start-step__text.first .start-step__header .large,
+    .start-step__text.first .start-step__body .large {
+        display: none;
+    }
+
+    .start-step__text.first .start-step__header .small,
+    .start-step__text.first .start-step__body .small{
+        display: unset;
+    }
+}
+
+@media (min-width: 768px) {
+    .start-step__text.first .start-step__header .large,
+    .start-step__text.first .start-step__body .large {
+        display: unset;
+    }
+
+    .start-step__text.first .start-step__header .small,
+    .start-step__text.first .start-step__body .small{
+        display: none;
+    }
+}

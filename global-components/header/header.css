@@ -186,9 +186,9 @@
 }
 
 .header__button.inverse{
-    background-color: black !important;
-    border-color: var(--black-70) !important;
-    color: white !important;
+    background-color: black;
+    border-color: var(--black-70);
+    color: white;
 }
 
 .header__button.inverse:hover{

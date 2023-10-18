@@ -1,0 +1,261 @@
+@media (max-width: 374px) {
+    main{
+        --section-banner__padding-left: var(--space-3);
+        --section-banner__padding-right: var(--space-3);
+        --section-banner__header__font-size: var(--font-size-1);
+
+        --section__small-display: auto;
+        --section__small-header__font-size: var(--font-size-6);
+
+        --section__large-display: none;
+        --section__padding: var(--space-5);
+        --section-content__padding: var(--space-3);
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    main{
+        --section-banner__padding-left: var(--space-3);
+        --section-banner__padding-right: var(--space-3);
+        --section-banner__header__font-size: var(--font-size-1);
+
+        --section__small-display: auto;
+        --section__small-header__font-size: var(--font-size-8);
+
+        --section__large-display: none;
+        --section__padding: var(--space-5);
+        --section-content__padding: var(--space-3);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    main{
+        --section-banner__padding-left: var(--logo__offset-medium);
+        --section-banner__padding-right: var(--space-4);
+        --section-banner__header__font-size: var(--font-size-2);
+
+        --section__small-display: none;
+        --section__small-header__font-size: var(--font-size-8);
+
+        --section__large-display: auto;
+        --section__padding: var(--space-9);
+        --section-content__padding: var(--space-4);
+    }
+}
+
+@media (min-width: 1024px) {
+    main{
+        --section-banner__padding-left: var(--logo__offset-large);
+        --section-banner__padding-right: var(--space-6);
+        --section-banner__header__font-size: var(--font-size-2);
+
+        --section__small-display: none;
+        --section__small-header__font-size: var(--font-size-8);
+
+        --section__large-display: auto;
+        --section__padding: var(--space-9);
+        --section-content__padding: var(--space-6);
+    }
+}
+
+.section-banner__wrapper{
+    display: flex;
+    z-index: 2;
+
+    position: sticky;
+    height: 50px;
+    width: 100%;
+    top: 0;
+
+    background-color: var(--dark-green);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.12),
+    0 0 2px 0 rgba(0, 0, 0, 0.24);
+}
+
+.section-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    padding-left: var(--section-banner__padding-left);
+    padding-right: var(--section-banner__padding-right);
+}
+
+.section-banner__header{
+    color: var(--inversed-text-color);
+    letter-spacing: 0.1em;
+    line-height:  1.5;
+    text-transform: uppercase;
+    font-family: "Sodo Sans Bold", sans-serif;
+    font-size: var(--section-banner__header__font-size);
+}
+
+.section-banner__button{
+    display: var(--section__small-display) !important;
+    font-size: var(--font-size-2);
+    font-family: "Sodo Sans Semibold", sans-serif;
+    white-space: nowrap;
+
+    color: var(--inversed-text-color) !important;
+}
+
+.section-wrapper{
+    padding-bottom: var(--section__padding);
+    padding-top: var(--section__padding);
+}
+
+.section-wrapper.first{
+    padding-top: 0;
+}
+
+.section-wrapper.last{
+    padding-bottom: 0;
+}
+
+.hero-section__large{
+    display: var(--section__large-display);
+}
+
+.hero-section__large-image{
+    display: flex;
+
+    background-color: rgb(212, 233, 226);
+    background-image: url("../imports/large-hero-section.png");
+    background-size: auto 100%;
+    background-position: 50%;
+}
+
+.height-anchor{
+    padding-bottom: 56.25%;
+    width: 0;
+}
+
+.large-content__wrapper{
+    display: flex;
+    margin: auto;
+    box-sizing: content-box;
+
+    width: 100%;
+}
+
+.large-content{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    width: 100%;
+}
+
+.large-content__text-wrapper{
+    text-align: left;
+    min-width: 48%;
+    max-width: 400px;
+    margin: initial;
+    padding: var(--space-5) var(--section-content__padding);
+}
+
+.large-content__header{
+    font-family: "Sodo Sans Semibold", sans-serif;
+    letter-spacing: -0.005em;
+    line-height: 1.29;
+
+    font-size: var(--font-size-9);
+}
+
+.large-content__body{
+    line-height: 1.5;
+    padding-top: var(--space-3);
+    font-size: var(--font-size-4);
+    color: var(--text-color)
+}
+
+.large-content__join{
+    padding-top: var(--space-5);
+}
+
+.large-content__button{
+    font-size: var(--font-size-3);
+    background-color: var(--green) !important;
+    border-color: var(--green) !important;
+}
+
+.large-content__join-text{
+    margin-top: var(--space-3);
+    font-size: var(--font-size-4);
+    line-height: 1.5;
+}
+
+.large-content__app-link{
+    color: var(--text-color);
+    text-decoration: underline !important;
+}
+
+.hero-section__small{
+    display: var(--section__small-display);
+}
+
+.hero-section__small-image{
+    display: flex;
+
+    background-color: rgb(212, 233, 226);
+    background-image: url("../imports/small-hero-section.png");
+    background-size: auto 100%;
+    background-position: 50%;
+}
+
+.width-anchor{
+    padding-bottom: 133.333%;
+}
+
+.small-content__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+}
+
+.small-content{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: var(--space-5) var(--section-content__padding);
+}
+
+.small-content__header{
+    font-family: "Sodo Sans Semibold", sans-serif;
+    text-align: center;
+    line-height: 1.29;
+    font-size: var(--section__small-header__font-size);
+}
+
+.small-content__body{
+    text-align: center;
+    line-height: 1.5;
+    padding-top: var(--space-3);
+    font-size: var(--font-size-3);
+    color: var(--text-color);
+}
+
+.small-content__join{
+    text-align: center;
+    padding-top: var(--space-5);
+}
+
+.small-content__button{
+    font-size: var(--font-size-2);
+    text-align: center !important;
+    background-color: var(--green) !important;
+    border-color: var(--green) !important;
+}
+
+.small-content__join-text{
+    margin-top: var(--space-3);
+}
+
+.small-content__app-link{
+    font-size: var(--font-size-3);
+    color: var(--text-color) !important;
+    line-height: 1.5;
+    text-decoration: underline !important;
+}

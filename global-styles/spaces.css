@@ -22,7 +22,11 @@ html{
 }
 
 .vertical-align-middle{
-    vertical-align: middle;
+    vertical-align: middle !important;
+}
+
+.vertical-align-top{
+    vertical-align: top !important;
 }
 
 .no-margin-bottom{

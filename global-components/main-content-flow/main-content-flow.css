@@ -4,6 +4,13 @@
     z-index: 0;
 }
 
+.content-block__wrapper{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+
 .content-block__wrapper-margin{
     display: flex;
     justify-content: center;
