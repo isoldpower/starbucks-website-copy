@@ -1,0 +1,129 @@
+.paragraph-section__title-area{
+    width: 100%;
+}
+
+.paragraph-section{
+    width: 100%;
+    text-align: center;
+}
+
+.paragraph-section__header{
+    font-size: var(--font-size-5);
+    line-height: 1.385;
+    font-family: var(--semi-bold-font);
+}
+
+.paragraph-section__body{
+    padding-top: var(--space-3);
+    color: var(--text-color);
+}
+
+.paragraph-section__paragraphs-wrapper{
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 48px;
+    margin: 0;
+}
+
+.paragraph{
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: var(--space-5);
+    margin: 0;
+}
+
+.paragraph.first{
+    margin-left: 0;
+}
+
+.paragraph.last{
+    margin-right: 0;
+}
+
+.paragraph__image{
+    margin: 0 auto;
+    flex-shrink: 0;
+    padding-bottom: 0;
+    padding-right: var(--space-3);
+}
+
+.paragraph__image img{
+    padding-bottom: 6.75px;
+}
+
+.paragraph__header{
+    font-size: var(--font-size-3);
+    font-family: var(--semi-bold-font);
+}
+
+.paragraph__body{
+    padding-top: var(--space-3);
+}
+
+.link,
+.link-area{
+    color: var(--green);
+}
+
+.link{
+    text-decoration: underline !important;
+}
+
+.link-area:hover .link,
+.link:hover
+{
+    text-decoration: none !important;
+}
+
+.bonus-link{
+    margin: var(--space-3) 0;
+}
+
+@media (min-width: 768px) {
+
+    .paragraph-section__title-area{
+        width: calc(100% * (2 / 3));
+        margin-left: calc(100% * (1/6));
+        margin-right: calc(100% * (1/6));
+    }
+
+    .paragraph-section__header{
+        font-size: var(--font-size-8);
+    }
+
+    .paragraph-section__paragraphs-wrapper{
+        flex-direction: row;
+        margin: 0 5vw;
+    }
+
+    .paragraph{
+        text-align: center;
+        flex-direction: column;
+        width: calc(100% / 3);
+        padding-bottom: 0;
+        margin: 0 var(--space-4);
+    }
+
+    .paragraph__header{
+        font-size: var(--font-size-4);
+    }
+
+    .paragraph__image{
+        margin: 0 auto;
+        flex-shrink: 0;
+        padding-bottom: var(--space-4);
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .paragraph-section__title-area{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}

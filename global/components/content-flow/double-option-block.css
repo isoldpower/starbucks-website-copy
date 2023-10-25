@@ -1,0 +1,127 @@
+.menu-block__global-wrapper{
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+.menu-block__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.menu-block__wrapper.right{
+    margin: 0;
+}
+
+.menu-block__wrapper.left{
+    margin-bottom: var(--space-5);
+}
+
+.menu-block__image-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding-bottom: var(--space-2);
+}
+
+.menu-block__image{
+    object-fit: cover;
+}
+
+.menu-block__text-wrapper{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    padding-bottom: var(--space-5);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+}
+
+.menu-block__text{
+    width: 100%;
+    color: var(--dark-green);
+}
+
+.menu-block__header-wrapper{
+    color: inherit;
+    font-size: var(--font-size-4);
+    margin-bottom: var(--space-4);
+}
+
+.menu-block__header{
+    color: inherit;
+    font-family: var(--semi-bold-font);
+}
+
+.menu-block__body{
+    color: inherit;
+    line-height: 1.75;
+    font-size: var(--font-size-3);
+}
+
+@media (min-width: 375px) {
+
+    .menu-block__header-wrapper{
+        font-size: var(--font-size-6);
+    }
+}
+
+@media (min-width: 768px) {
+
+    .menu-block__global-wrapper{
+        flex-direction: row;
+    }
+
+    .menu-block__wrapper{
+        width: 50%;
+    }
+
+    .menu-block__wrapper.right{
+        margin: 0 0 0 var(--space-3);
+    }
+
+    .menu-block__wrapper.left{
+        margin: 0 var(--space-3) 0 0;
+    }
+
+    .menu-block__text-wrapper{
+        padding-left: var(--space-4);
+        padding-right: var(--space-4);
+    }
+
+    .menu-block__header-wrapper{
+        font-size: var(--font-size-7);
+    }
+
+    .menu-block__body{
+        font-size: var(--font-size-4);
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .menu-block__text-wrapper{
+        padding-left: var(--space-6);
+        padding-right: var(--space-6);
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .menu-block__text-wrapper{
+        padding-left: var(--space-7);
+        padding-right: var(--space-7);
+    }
+}

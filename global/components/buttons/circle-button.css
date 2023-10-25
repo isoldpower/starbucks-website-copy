@@ -1,0 +1,25 @@
+.circle-button{
+    display: inline-block;
+    line-height: 1.2;
+
+    background: none;
+    border: 1px solid currentColor;
+    color: var(--text-color);
+    border-radius: 50px;
+
+    padding: 7px 16px;
+}
+
+.circle-button:hover{
+    background: var(--black-10);
+}
+
+.circle-button.inverse{
+    background-color: black;
+    border-color: var(--black-70);
+    color: white;
+}
+
+.circle-button.inverse:hover{
+    background-color: var(--black-70) !important;
+}

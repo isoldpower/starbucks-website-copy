@@ -1,0 +1,12 @@
+.grid{
+    font-size: 0;
+    overflow-wrap: unset;
+    display: block;
+    text-align: left;
+}
+
+.grid-item{
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}

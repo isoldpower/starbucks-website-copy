@@ -1,0 +1,62 @@
+[
+    {
+        "isSmall": false,
+        "title": "Share an enchanting treat",
+        "text": "Surprise someone special with a gift that casts a spell.",
+        "button": "Send an eGift",
+        "buttonLink": "https://www.starbucks.com/gift/category/halloween",
+        "image": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-86157.jpg",
+        "backgroundColor": "dark-green",
+        "lightText": true
+    },
+    {
+        "isSmall": false,
+        "title": "Long live pumpkin",
+        "text": "Break for a classic Pumpkin Spice Latte topped with whipped cream and pumpkin-pie spices.",
+        "button": "Order now",
+        "buttonLink": "https://www.starbucks.com/menu/product/418/hot",
+        "image": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-86159.jpg",
+        "backgroundColor": "yellow",
+        "lightText": false
+    },
+    {
+        "isSmall": false,
+        "title": "New apple in the bunch",
+        "text": "Introducing our Iced Apple Crisp Oatmilk Shaken Espresso with a perfectly balanced taste.",
+        "button": "Order now",
+        "buttonLink": "https://www.starbucks.com/menu/product/2123773/iced",
+        "image": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-85266.jpg",
+        "backgroundColor": "yellow",
+        "lightText": true
+    },
+    {
+        "isSmall": false,
+        "title": "Good idea, chai lovers",
+        "text": "Try the new coffee-free Iced Pumpkin Cream Chai Tea Latte, inspired by our customers. It’s fall in a cup.",
+        "button": "Order now",
+        "buttonLink": "https://www.starbucks.com/menu/product/2123774/iced",
+        "image": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-85869.jpg",
+        "backgroundColor": "red",
+        "lightText": true
+    },
+    {
+        "isSmall": false,
+        "title": "Whoo to the hoo",
+        "text": "Be on the lookout for an adorable Owl Cake Pop coated in chocolaty icing.",
+        "button": "Order now",
+        "buttonLink": "https://www.starbucks.com/menu/product/2123679/single",
+        "image": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-86093.jpg",
+        "backgroundColor": "dark-green",
+        "lightText": true
+    },
+    {
+        "isSmall": true,
+        "title": "Pumpkin spice, delivered so nice",
+        "text": "Your fall favorites, at your door—when you order Starbucks delivery with DoorDash.*",
+        "button": "Order now",
+        "buttonLink": "https://www.doordash.com/business/starbucks-1133/?ignore_splash_experience=true&utm_source=Enterprise&utm_medium=Enterprise&utm_campaign=CX_US_EP_EP_EP_PAR_CUSXXX__+Starbucks_Oct_Evergreen_Delivery_Landing_Page_Web",
+        "image": "https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-85932.jpg",
+        "backgroundColor": "dark-green",
+        "lightText": true
+    }
+]

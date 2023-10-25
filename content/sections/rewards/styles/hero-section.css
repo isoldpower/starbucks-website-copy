@@ -1,0 +1,239 @@
+.section-banner__wrapper{
+    z-index: 4;
+    display: flex;
+    position: sticky;
+    height: 50px;
+    width: 100%;
+    top: 0;
+
+    background-color: var(--dark-green);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.24);
+}
+
+.section-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+}
+
+.section-banner__header{
+    color: var(--inversed-text-color);
+    font-family: var(--bold-font);
+}
+
+.section-banner__button{
+    font-family: var(--semi-bold-font);
+    white-space: nowrap;
+
+    color: var(--inversed-text-color) !important;
+}
+
+.section-wrapper{
+    padding-bottom: var(--space-5);
+    padding-top: var(--space-5);
+}
+
+.section-wrapper.first{
+    padding-top: 0;
+}
+
+.section-wrapper.last{
+    padding-bottom: 0;
+}
+
+.hero-section__large{
+    display: none;
+}
+
+.hero-section__large-image,
+.hero-section__small-image {
+    display: flex;
+
+    background-color: rgb(212, 233, 226);
+    background-size: auto 100%;
+    background-position: 50%;
+}
+
+.hero-section__large-image{
+    background-image: url("../imports/large-hero-section.png");
+}
+
+.hero-section__small-image{
+    background-image: url("../imports/small-hero-section.png");
+}
+
+.height-anchor__large,
+.height-anchor__small {
+    width: 0;
+}
+
+.height-anchor__large{
+    padding-bottom: 56.25%;
+}
+
+.height-anchor__small{
+    padding-bottom: 133.333%;
+}
+
+.large-content__wrapper,
+.small-content__wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.large-content__wrapper{
+    margin: auto;
+    box-sizing: content-box;
+}
+
+.small-content__wrapper{
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.large-content__text-wrapper,
+.small-content {
+    padding: var(--space-5) var(--space-3);
+    max-width: 400px;
+}
+
+.large-content{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    width: 100%;
+}
+
+.large-content__text-wrapper{
+    text-align: left;
+    min-width: 48%;
+}
+
+.small-content{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.large-content__header,
+.small-content__header {
+    font-family: var(--semi-bold-font);
+    letter-spacing: -0.005em;
+    line-height: 1.29;
+}
+
+.large-content__header{
+    font-size: var(--font-size-9);
+}
+
+.small-content__header{
+    font-size: var(--font-size-6);
+}
+
+.large-content__body,
+.small-content__body {
+    padding-top: var(--space-3);
+    color: var(--text-color);
+}
+
+.large-content__body{
+    font-size: var(--font-size-4);
+}
+
+.small-content__body{
+    font-size: var(--font-size-3);
+}
+
+.large-content__join,
+.small-content__join {
+    padding-top: var(--space-5);
+}
+
+.large-content__button,
+.small-content__button {
+    background-color: var(--green) !important;
+    border-color: var(--green) !important;
+}
+
+.large-content__button{
+    font-size: var(--font-size-3);
+}
+
+.small-content__button{
+    font-size: var(--font-size-2);
+}
+
+.large-content__join-text,
+.small-content__join-text {
+    margin-top: var(--space-3);
+}
+
+.large-content__join-text{
+    font-size: var(--font-size-4);
+}
+
+.large-content__app-link,
+.small-content__app-link {
+    color: var(--text-color);
+    text-decoration: underline !important;
+}
+
+.small-content__app-link{
+    font-size: var(--font-size-3);
+}
+
+@media (min-width: 375px) {
+
+    .small-content__header{
+        font-size: var(--font-size-8);
+    }
+}
+
+@media (min-width: 768px) {
+
+    .section-banner{
+        padding-left: var(--logo__offset-medium);
+        padding-right: var(--space-4);
+    }
+
+    .section-banner__button{
+        display: none !important;
+    }
+
+    .hero-section__small{
+        display: none;
+    }
+
+    .hero-section__large{
+        display: unset;
+    }
+
+    .section-wrapper{
+        padding-bottom: var(--space-9);
+        padding-top: var(--space-9);
+    }
+
+    .large-content__text-wrapper,
+    .small-content
+    {
+        padding: var(--space-5) var(--space-4);
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .section-banner{
+        padding-left: var(--logo__offset-large);
+        padding-right: var(--space-6);
+    }
+
+    .large-content__text-wrapper,
+    .small-content
+    {
+        padding: var(--space-5) var(--space-6);
+    }
+}

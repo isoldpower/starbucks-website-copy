@@ -1,0 +1,21 @@
+.paragraph__text .paragraph__header .large,
+.paragraph__text .paragraph__body .large {
+    display: none;
+}
+
+.paragraph__text .paragraph__header .small,
+.paragraph__text .paragraph__body .small{
+    display: unset;
+}
+
+@media (min-width: 768px) {
+    .paragraph__text .paragraph__header .large,
+    .paragraph__text .paragraph__body .large {
+        display: unset;
+    }
+
+    .paragraph__text .paragraph__header .small,
+    .paragraph__text .paragraph__body .small{
+        display: none;
+    }
+}

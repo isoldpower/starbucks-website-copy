@@ -1,0 +1,38 @@
+.section__content-wrapper{
+    padding: 0 var(--space-3);
+}
+
+.section-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+}
+
+.section-wrapper.partners{
+    padding: 0!important;
+    margin-bottom: var(--space-5);
+}
+
+@media (min-width: 768px) {
+
+    .section__content-wrapper{
+        padding: 0 var(--space-4);
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .section__content-wrapper{
+        padding: 0 var(--space-6);
+    }
+}
+
+@media (min-width: 1520px) {
+
+    .section__content-wrapper{
+        padding: 0;
+    }
+}

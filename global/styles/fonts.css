@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Sodo Sans';
+    src: url(/global/imports/fonts/sodo-sans/SoDoSans-Regular.ttf);
+    src: local("Sodo Sans"), url("/global/imports/fonts/sodo-sans/SoDoSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Lander';
+    src: url(/global/imports/fonts/lander/LanderGrande-Regular.otf);
+    src: local("Lander"), url("/global/imports/fonts/lander/LanderGrande-Regular.otf");
+}
+
+@font-face {
+    font-family: 'Pike';
+    src: url(/global/imports/fonts/pike/Pike-Regular.otf);
+    src: local("Pike"), url("/global/imports/fonts/pike/Pike-Regular.otf");
+}
+
+@font-face {
+    font-family: 'Sodo Sans Bold';
+    src: url(/global/imports/fonts/sodo-sans/SoDoSans-Bold.ttf);
+    src: local("Sodo Sans Bold"), url("/global/imports/fonts/sodo-sans/SoDoSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Sodo Sans Light';
+    src: url(/global/imports/fonts/sodo-sans/SoDoSans-Light.ttf);
+    src: local("Sodo Sans Light"), url("/global/imports/fonts/sodo-sans/SoDoSans-Light.ttf");
+}
+
+@font-face{
+    font-family: 'Sodo Sans Semibold';
+    font-display: swap;
+    src: url(/global/imports/fonts/sodo-sans/SoDoSans-SemiBold.ttf);
+    src: local("Sodo Sans Semibold"), url("/global/imports/fonts/sodo-sans/SoDoSans-SemiBold.ttf");
+}
+
+html{
+    font-size: 10px;
+
+    --normal-line-height: 1.5;
+    --normal-letter-spacing: -0.01em;
+    --default-font: "SoDo Sans", sans-serif;
+    --semi-bold-font: "Sodo Sans Semibold", sans-serif;
+    --bold-font: "Sodo Sans Bold", sans-serif;
+
+    --font-size-1: 1.3rem;
+    --font-size-2: 1.4rem;
+    --font-size-3: 1.6rem;
+    --font-size-4: 1.9rem;
+    --font-size-5: 2.0rem;
+    --font-size-6: 2.2rem;
+    --font-size-7: 2.4rem;
+    --font-size-8: 2.8rem;
+    --font-size-9: 3.6rem;
+    --font-size-10: 5.0rem;
+}
+
+body{
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "calt";
+    line-height: var(--normal-line-height);
+    letter-spacing: var(--normal-letter-spacing);
+    font-family: var(--default-font);
+    color: var(--text-color);
+    font-size: var(--font-size-2);
+}
+
+.small-font-size{
+    font-size: var(--font-size-1);
+}
+
+@media (min-width: 768px) {
+    body{
+        font-size: var(--font-size-3);
+    }
+
+    .small-font-size{
+        font-size: var(--font-size-2);
+    }
+}
+
+.semi-bold{
+    font-family: var(--semi-bold-font);
+}
+
+.upper{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.bold{
+    font-family: var(--bold-font);
+}
+
+.no-decoration{
+    text-decoration: none;
+    color: currentColor;
+}

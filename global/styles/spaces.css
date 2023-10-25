@@ -1,0 +1,52 @@
+html{
+    --space-1: 0.4rem;
+    --space-2: 0.8rem;
+    --space-3: 1.6rem;
+    --space-4: 2.4rem;
+    --space-5: 3.2rem;
+    --space-6: 4.0rem;
+    --space-7: 4.8rem;
+    --space-8: 5.6rem;
+    --space-9: 6.4rem;
+
+    --gutter-small: 1.6rem;
+    --gutter-medium: 2.4rem;
+    --gutter-large: 4rem;
+}
+
+.vertical-center{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.absolute-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.vertical-align-middle{
+    vertical-align: middle !important;
+}
+
+.vertical-align-top{
+    vertical-align: top !important;
+}
+
+.no-margin-bottom{
+    margin-bottom: 0 !important;
+}
+
+.no-margin-left{
+    margin-left: 0 !important;
+}
+
+.no-padding-left{
+    padding-left: 0 !important;
+}
+
+.mr-3{
+    margin-right: var(--space-3);
+}

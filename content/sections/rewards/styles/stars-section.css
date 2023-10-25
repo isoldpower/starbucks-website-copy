@@ -1,0 +1,140 @@
+.stars-section{
+    padding-top: var(--space-7);
+    background-color: var(--gray);
+}
+
+.stars-section__header{
+    padding-right: var(--space-3);
+    padding-left: var(--space-3);
+    padding-bottom: var(--space-3);
+}
+
+.stars-section__header h2{
+    text-align: center;
+
+    font-family: var(--semi-bold-font);
+    line-height: 1.385;
+    font-size: var(--font-size-5);
+}
+
+.stars-section__tabs{
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+    max-width: unset;
+    margin: 0 auto;
+}
+
+.stars-tab__wrapper{
+    flex-grow: 1;
+    width: 100%;
+    padding: var(--space-2) var(--space-2) var(--space-3);
+}
+
+.stars-tab{
+    font-family: var(--semi-bold-font);
+    flex-grow: 1;
+}
+
+.stars-tab__amount{
+    flex-grow: 1;
+    font-size: var(--font-size-4);
+}
+
+.stars-tab__star{
+    color: var(--star-yellow);
+}
+
+.tab-content__wrapper{
+    background-color: var(--light-salad);
+    width: 100%;
+}
+
+.tab-content{
+    display: unset;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.14);
+}
+
+.tab-content__wrapper{
+    padding-bottom: var(--space-7);
+}
+
+.tab-content__image-wrapper{
+    margin-right: 0;
+    padding: var(--space-5) 0;
+}
+
+.tab-content__image{
+    max-width: 100%;
+}
+
+.tab-content__description{
+    text-align: center;
+    max-width: 100%;
+    flex-grow: 1;
+    padding: 0 var(--space-3);
+}
+
+.tab-content__description-header{
+    font-family: var(--semi-bold-font);
+    font-size: var(--font-size-4);
+    padding-bottom: var(--space-3);
+}
+
+@media (min-width: 375px) {
+
+    .stars-section__header h2{
+        font-size: var(--font-size-7);
+    }
+}
+
+@media (min-width: 768px) {
+
+    .stars-section__header{
+        padding-bottom: var(--space-7);
+    }
+
+    .stars-section__header h2{
+        font-size: var(--font-size-8);
+    }
+
+    .stars-tab__amount{
+        font-size: var(--font-size-7);
+    }
+
+    .stars-section__tabs{
+        max-width: 540px;
+    }
+
+    .tab-content{
+        display: flex;
+        padding: var(--space-5) 0;
+    }
+
+    .tab-content__image-wrapper{
+        margin-right: var(--space-7);
+        padding: 0;
+    }
+
+    .tab-content__description-header{
+        font-size: var(--font-size-7);
+    }
+
+    .tab-content__description{
+        text-align: left;
+        max-width: 375px;
+    }
+
+    .tab-content__image{
+        max-width: 375px;
+    }
+
+    .tab-content__wrapper{
+        padding-bottom: 0;
+    }
+}

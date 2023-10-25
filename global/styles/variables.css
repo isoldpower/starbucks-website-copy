@@ -1,0 +1,19 @@
+body{
+    --logo__offset-large: 131px;
+    --logo__offset-medium: 99px;
+    --menu__side-nav__width: 150px;
+    --menu__left-align: 400px;
+
+    --header-logo-tiny: 32px;
+    --header-logo-small: 40px;
+    --header-logo-medium: 51px;
+    --header-logo-big: 51px;
+
+    --header-height-tiny: 64px;
+    --header-height-small: 72px;
+    --header-height-medium: 83px;
+    --header-height-big: 99px;
+
+    --max-content-width: 1440px;
+    --menu-large-grid-offset: calc(var(--menu__left-align) - var(--menu__side-nav__width) - var(--logo__offset-large));
+}
