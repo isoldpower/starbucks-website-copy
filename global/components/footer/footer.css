@@ -180,10 +180,6 @@
         padding: 0 var(--gutter-medium);
     }
 
-    .footer__wrapper.menu-gutters{
-        padding-left: var(--logo__offset-medium) !important;
-    }
-
     .footer__column-header{
         font-size: var(--font-size-4);
     }
@@ -205,10 +201,6 @@
 
     .footer__wrapper{
         padding: 0 var(--gutter-large);
-    }
-
-    .footer__wrapper.menu-gutters{
-        padding-left: var(--logo__offset-large) !important;
     }
 
     .footer__navigation{

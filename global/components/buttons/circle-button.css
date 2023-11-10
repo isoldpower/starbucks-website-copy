@@ -23,3 +23,8 @@
 .circle-button.inverse:hover{
     background-color: var(--black-70) !important;
 }
+
+.circle-button.circle-button--text{
+    border-color: transparent !important;
+    color: var(--green) !important;
+}

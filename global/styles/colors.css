@@ -15,6 +15,7 @@ html{
     --inversed-text-color: white;
 
     --green: #00754a;
+    --green-mid: #006241;
     --red: #b04a5a;
     --dark-red: #76232f;
     --yellow: #d69a2d;
@@ -25,6 +26,7 @@ html{
     --soft-pink: #d5a286;
     --light-salad: #d4e9e2;
     --light-gray: #f9f9f9;
+    --ceramic: #edebe9;
     --gray: rgba(211, 232, 225, 0.33);
 }
 

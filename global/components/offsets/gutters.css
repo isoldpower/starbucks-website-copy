@@ -1,0 +1,28 @@
+.sb-global-gutters {
+    padding-left:var(--gutter-small);
+    padding-right:var(--gutter-small)
+}
+
+@media (min-width: 768px) {
+
+    .sb-global-gutters {
+        padding-left: var(--gutter-medium);
+        padding-right: var(--gutter-medium)
+    }
+
+    .global-gutters.global-gutters--logo-offset{
+        padding-left: var(--logo__offset-medium);
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .global-gutters {
+        padding-left: var(--gutter-large);
+        padding-right: var(--gutter-large)
+    }
+
+    .global-gutters.global-gutters--logo-offset {
+        padding-left:var(--logo__offset-large)
+    }
+}

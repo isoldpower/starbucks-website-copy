@@ -1,0 +1,70 @@
+.gift-cards__carousel{
+    position: relative;
+    overflow: hidden;
+    touch-action: pan-y pinch-zoom;
+    z-index: 0;
+
+    padding-right: var(--space-4);
+    padding-top: var(--space-3);
+    padding-bottom: var(--space-3);
+}
+
+.carousel__arrow{
+    z-index: 1;
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+}
+
+.carousel__button {
+    border-radius: 500px;
+    box-shadow: 0 0 6px rgba(0,0,0,.24),0 8px 12px rgba(0,0,0, 0.14);
+}
+
+.carousel__arrow.carousel__arrow--left{
+    padding-right: var(--space-2);
+    left: var(--space-3);
+}
+
+.carousel__arrow.carousel__arrow--right{
+    padding-left: var(--space-2);
+    right: var(--space-3);
+}
+
+.carousel__button{
+    position: relative;
+    display: block;
+    color: var(--black-60);
+    opacity: 1;
+    transition-property: all;
+
+    height: var(--space-6);
+    width: var(--space-6);
+    line-height: var(--space-6);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.gift-cards__group-list{
+    white-space: nowrap;
+    position: relative;
+}
+
+@media (min-width: 480px) {
+    .gift-cards__carousel{
+        padding-right: var(--space-9);
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel__arrow{
+        padding-left: var(--logo__offset-large);
+    }
+
+    .carousel__arrow.carousel__arrow--left{
+        left: var(--space-4);
+    }
+
+    .carousel__arrow.carousel__arrow--right{
+        right: var(--space-4);
+    }
+}

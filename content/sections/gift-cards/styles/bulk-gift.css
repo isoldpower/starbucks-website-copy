@@ -1,0 +1,63 @@
+.bulk-gift__wrapper{
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-5);
+    background-color: var(--light-gray);
+}
+
+.bulk-gift__content{
+    display: unset;
+    align-items: center;
+}
+
+.bulk-gift__image{
+    display: block;
+    padding-left: var(--space-3);
+    max-width: 375px;
+    width: 100%;
+}
+
+.bulk-gift__text{
+    padding-right: var(--space-8);
+    padding-left: var(--space-3);
+    max-width: 375px;
+}
+
+.bulk-gift__header{
+    padding-top: var(--space-4);
+    padding-right: var(--space-3);
+    padding-bottom: var(--space-2);
+    font-size: var(--font-size-7);
+}
+
+.bulk-gift__body{
+    color: var(--soft-text-color);
+}
+
+.bulk-gift__button{
+    margin-top: var(--space-3);
+}
+
+@media (min-width: 768px) {
+
+    .bulk-gift__wrapper{
+        padding-top: var(--space-8);
+        padding-bottom: var(--space-8);
+    }
+
+    .bulk-gift__content{
+        display: flex;
+    }
+
+    .bulk-gift__image{
+        padding-left: 0;
+        margin-right: var(--space-6);
+    }
+
+    .bulk-gift__text{
+        margin-right: var(--space-5);
+    }
+
+    .bulk-gift__header{
+        padding-top: 0;
+    }
+}

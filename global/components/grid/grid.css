@@ -10,3 +10,27 @@
     text-align: left;
     vertical-align: top;
 }
+
+.grid.grid--medium-gutter{
+    margin: 0 calc(var(--space-2) * -1);
+}
+
+.grid.grid--medium-gutter .grid-item{
+    padding: 0 var(--space-2);
+}
+
+.grid img{
+    height: auto;
+    max-width: 100%;
+}
+
+@media (min-width: 1280px) {
+
+    .grid.grid--medium-gutter{
+        margin: 0 calc(var(--space-3) * -1);
+    }
+
+    .grid.grid--medium-gutter .grid-item{
+        padding: 0 var(--space-3);
+    }
+}
