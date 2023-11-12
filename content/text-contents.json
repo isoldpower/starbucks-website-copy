@@ -1,5 +1,19 @@
 [
     {
-        "text": "*See the DoorDash app for availability and restrictions. Menu limited."
+        "text": [
+            {
+                "content": "*At participating stores. Some restrictions apply. See",
+                "isLink": false
+            },
+            {
+                "content": " https://www.starbucks.com/rewards ",
+                "isLink": true,
+                "link": "https://www.starbucks.com/rewards"
+            },
+            {
+                "content": "for details.",
+                "isLink": false
+            }
+        ]
     }
 ]

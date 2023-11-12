@@ -16,6 +16,7 @@ html{
 
     --green: #00754a;
     --green-mid: #006241;
+    --light-red: #ef3340;
     --red: #b04a5a;
     --dark-red: #76232f;
     --yellow: #d69a2d;
@@ -23,6 +24,7 @@ html{
     --dark-green: #1e3932;
     --light-yellow: #d7da58;
     --pink: #e31c79;
+    --dark-pink: #b37697;
     --soft-pink: #d5a286;
     --light-salad: #d4e9e2;
     --light-gray: #f9f9f9;
@@ -46,6 +48,10 @@ body{
     background-color: var(--dark-red);
 }
 
+.light-red{
+    background-color: var(--light-red);
+}
+
 .yellow{
     background-color: var(--yellow);
 }
@@ -60,6 +66,10 @@ body{
 
 .pink{
     background-color: var(--pink);
+}
+
+.dark-pink{
+    background-color: var(--dark-pink);
 }
 
 .soft-pink{
