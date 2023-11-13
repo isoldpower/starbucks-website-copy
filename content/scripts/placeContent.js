@@ -1,5 +1,5 @@
-import placePosts from "./posts.js";
-import placeText from "./text.js";
+import placePosts from "./modules/adjustPosts.js";
+import placeText from "./modules/adjustUnderscores.js";
 
 async function asyncCall(){
     await placePosts();
