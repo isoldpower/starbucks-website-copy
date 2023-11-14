@@ -1,0 +1,6 @@
+<li class="side-navigator__section">
+    <span class="side-navigator__section-header"id="side-section-title">Lorem</span>
+    <ul class="side-navigator__section-body" id="side-menu-items">
+        
+    </ul>
+</li>

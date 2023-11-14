@@ -1,0 +1,7 @@
+<section class="menu-section">
+    <h2 class="menu-section__header" id="menu-section-title">Drinks</h2>
+    <hr class="menu-section__separator"/>
+    <div class="menu-section__items-grid" id="menu-section-items">
+
+    </div>
+</section>

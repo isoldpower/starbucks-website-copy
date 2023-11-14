@@ -1,0 +1,22 @@
+<div class="content-block__wrapper-margin">
+    <div class="content-block">
+        <div class="content-block__inner" id="post-wrapper">
+            <div class="promo-block__image-wrapper">
+                <img alt="cup of coffee" src="https://i.ibb.co/p1YVg3Q/Untitled.jpg" id="post-image">
+            </div>
+            <div class="promo-block__outer-text-wrapper">
+                <div class="promo-block__inner-text-wrapper" id="post-text">
+                    <h1 class="promo-block__header-text semi-bold" id="post-header">
+                        Lorem ipsum dolor sit amet
+                    </h1>
+                    <p class="promo-block__body-text" id="post-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi ex, expedita nihil quam recusandae!
+                    </p>
+                    <a class="circle-button promo__button" href="/" id="post-button">
+                        Lorem ipsum
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,7 +1,13 @@
-import PostsCreator from "./postsCreator.js";
+import ElementsCreatorPromoWrapper from "../../../global/scripts/ElementsCreatorPromoWrapper.js";
 
-const textJsonURL = "text-contents.json";
-const textTemplateURL = "text-template.txt";
+const textJsonURL = "dynamic-content/text-contents.json";
+const textTemplateURL = "dynamic-content/templates/text-template.txt";
+const underscoreParentId = "posts-parent";
+
+async function placeUnderscores(){
+    const elementsCreator = new ElementsCreatorPromoWrapper(textJsonURL, textTemplateURL, adjustTextElement);
+    return await elementsCreator.displayElements(underscoreParentId);
+}
 
 const adjustTextElement = (template, text) => {
     const textJson = text.text;
@@ -62,7 +68,4 @@ const setText = (element, jsonElement) => {
     return element;
 };
 
-export default async function placeText () {
-    const contentParser = new PostsCreator(textJsonURL, textTemplateURL, adjustTextElement);
-    return contentParser.displayElements();
-}
+export default placeUnderscores;

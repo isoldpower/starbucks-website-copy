@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Drinks",
+    "items": [
+      {
+        "name": "Oleato™",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/bev/OleatoGingerbreadLatte.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/drinks/oleato"
+      },
+      {
+        "name": "Hot Coffees",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_CaffeAmericano.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/drinks/hot-coffees"
+      },
+      {
+        "name": "Hot Teas",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20230612_6244_GingerbreadOatmilkChai-onGreen-MOP_1800.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/drinks/hot-teas"
+      },
+      {
+        "name": "Hot Drinks",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220607_1509_PeppermintHotChocolate-onGreen-MOP_1800.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/drinks/hot-drinks"
+      },
+      {
+        "name": "Frappuccino® Blended Beverages",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20230612_4665_SugarCookieAlmondmilkFrappuccino.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/drinks/frappuccino-blended-beverages"
+      },
+      {
+        "name": "Cold Coffees",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220323_PumpkinCreamColdBrew-onGreen.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/drinks/cold-coffees"
+      },
+      {
+        "name": "Iced Teas",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190531_IcedBlackTea.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/drinks/iced-teas"
+      },
+      {
+        "name": "Cold Drinks",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20221216_FrozenPineapplePassionfruitRefresherLemonade.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/drinks/cold-drinks"
+      }
+    ]
+  },
+  {
+    "title": "Food",
+    "items": [
+      {
+        "name": "Hot Breakfast",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/food/SBX20220125_ChickenMapleButterSandwich.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/food/hot-breakfast"
+      },
+      {
+        "name": "Oatmeal & Yogurt",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/food/SBX20230321_Oatmeal_onGreen.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/food/oatmeal-yogurt"
+      },
+      {
+        "name": "Bakery",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/food/SBX20190715_PlainBagel.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/food/bakery"
+      },
+      {
+        "name": "Lunch",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/food/SBX20220207_GrilledCheeseOnSourdough_US.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/food/lunch"
+      },
+      {
+        "name": "Snacks & Sweets",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/food/SBX20210825_MadeleineCakes.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/food/snacks-sweets"
+      }
+    ]
+  },
+  {
+    "title": "At Home Coffee",
+    "items": [
+      {
+        "name": "Whole Bean",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/at-home/SBX24-684722_Reserve_Christmas_2023_WBReserve_MOP_1800.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/at-home-coffee/whole-bean"
+      },
+      {
+        "name": "Ground",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/at-home/SBX20230721_ChristmasBlend-2023-Ground.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/at-home-coffee/ground"
+      },
+      {
+        "name": "VIA® Instant",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/at-home/SBX20190715_ViaInstantSweetenedIcedCoffee.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/at-home-coffee/via-instant"
+      }
+    ]
+  },
+  {
+    "title": "Merchandise",
+    "items": [
+      {
+        "name": "Cold Cups",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/merch/TwilightOmbreStainlessSteelColdCup.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/merchandise/cold-cups"
+      },
+      {
+        "name": "Tumblers",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/merch/ColorChangingPlasticReusableHotCupPearlLid.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/merchandise/tumblers"
+      },
+      {
+        "name": "Mugs",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/merch/11140427_CERMC_MUG_BASE_DSKTP_14OZ_CORE.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/merchandise/mugs"
+      },
+      {
+        "name": "Other",
+        "image": "https://globalassets.starbucks.com/digitalassets/products/merch/11140533_COFFEE_PRESS_CORE_DUAL_FILTER_FY23.jpg?impolicy=1by1_tight_288",
+        "link": "https://www.starbucks.com/menu/merchandise/other"
+      }
+    ]
+  }
+]

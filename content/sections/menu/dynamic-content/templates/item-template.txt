@@ -1,0 +1,12 @@
+<div class="menu-section__item-wrapper">
+    <div class="menu-item">
+        <div class="menu-item__icon-wrapper">
+            <div class="menu-item__icon">
+                <img alt="Lorem ipsum dolor sit amet"
+                     src="https://i.ibb.co/p1YVg3Q/Untitled.jpg" id="menu-item-image">
+            </div>
+        </div>
+        <h3 class="menu-item__name" id="menu-item-title">Lorem</h3>
+        <a class="menu-item__link-overlay" href="https://www.error.com" id="menu-item-link"></a>
+    </div>
+</div>
