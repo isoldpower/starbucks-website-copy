@@ -12,6 +12,7 @@
 
 .circle-button:hover{
     background: var(--black-10);
+    cursor: pointer;
 }
 
 .circle-button.inverse{

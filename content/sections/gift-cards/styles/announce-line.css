@@ -5,13 +5,13 @@
 }
 
 .announce-line__content{
-    display: unset;
+    display: block;
     flex-wrap: wrap;
     align-items: center;
 }
 
 .announce-line__main{
-    display: unset;
+    display: block;
     margin-top: var(--space-4);
     margin-bottom: var(--space-3);
     flex-wrap: wrap;
@@ -24,7 +24,7 @@
 }
 
 .announce-line__stars{
-    display: unset;
+    display: block;
     align-items: center;
 }
 

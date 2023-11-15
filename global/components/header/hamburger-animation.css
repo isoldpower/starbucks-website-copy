@@ -1,0 +1,75 @@
+.hamburger-menu__mask{
+    opacity: 0.38;
+    transition: 0.2s linear;
+}
+
+.hamburger-menu__mask[aria-disabled=true]{
+    opacity: 0;
+    pointer-events: none;
+    transition: 0s;
+}
+
+.hamburger-menu__back{
+    right: 0;
+    transition: 0.3s ease-in;
+}
+
+.hamburger-menu__back[aria-disabled=true]{
+    right: -80%;
+    transition-duration: 0.4s;
+}
+
+.hamburger-icon__line{
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+.hamburger-icon__line--upper{
+    transition: 0.2s ease-in;
+}
+
+.hamburger-icon__line--upper.OPENED{
+    transform: translateY(330%) rotate(-45deg);
+}
+
+.hamburger-icon__line--upper.TRANSITION{
+    transform: translateY(330%) rotate(0);
+    transition: 0.2s ease-out;
+}
+
+.hamburger-icon__line--upper.CLOSED{
+    transform: translateY(0) rotate(0);
+}
+
+.hamburger-icon__line--middle{
+    transition: 0.2s linear;
+}
+
+.hamburger-icon__line--middle.OPENED{
+    opacity: 0;
+}
+
+.hamburger-icon__line--middle.TRANSITION{
+    opacity: 0;
+}
+
+.hamburger-icon__line--middle.CLOSED{
+    opacity: 1;
+}
+
+.hamburger-icon__line--bottom{
+    transition: 0.2s ease-in;
+}
+
+.hamburger-icon__line--bottom.OPENED{
+    transform: translateY(-330%) rotate(-135deg);
+}
+
+.hamburger-icon__line--bottom.TRANSITION{
+    transform: translateY(-330%) rotate(0);
+    transition: 0.2s ease-out;
+}
+
+.hamburger-icon__line--bottom.CLOSED{
+    transform: translateY(0) rotate(0);
+}

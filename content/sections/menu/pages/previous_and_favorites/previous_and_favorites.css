@@ -1,3 +1,7 @@
+.orders{
+    margin-top: var(--space-3);
+}
+
 .orders-list__wrapper{
     padding-left: var(--space-3);
     padding-right: var(--space-3);
@@ -18,6 +22,10 @@
 .orders-list__header{
     font-size: var(--font-size-7);
     font-family: var(--bold-font);
+}
+
+.order__image-wrapper{
+    margin-top: var(--space-6);
 }
 
 .order__image{
@@ -66,6 +74,10 @@
 }
 
 @media (min-width: 768px) {
+
+    .orders{
+        margin-top: var(--space-5);
+    }
 
     .orders-list__wrapper{
         padding-left: var(--logo__offset-medium);

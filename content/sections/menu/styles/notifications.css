@@ -100,7 +100,7 @@
     margin-left: var(--space-4);
 }
 
-.cart__button{
+.cart-button:not([data-count="0"]){
     display: flex;
     position: relative;
     justify-content: center;
@@ -108,21 +108,27 @@
     cursor: pointer;
 }
 
-.cart__icon{
+.cart-button[data-count="0"] .cart-button__text{
+    display: none;
+}
+
+.cart-button[data-count="0"] .cart-button__icon{
+    background-image: url(https://starbucks.com/app-assets/d21adfaa60a934de88eb1cc00c315e52.svg);
+}
+
+.cart-button__icon{
+    background-image: url(https://starbucks.com/app-assets/9c51700b42896823747e5d9f27519d03.svg);
+    background-repeat: no-repeat;
     display: inline-block;
 
     height: 32px;
     width: 32px;
 }
 
-.cart__fulfill{
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    width: 1px;
-    border: 0;
-    overflow: hidden;
-    position: absolute;
-    visibility: hidden;
+.cart-button__text{
+    font-size: var(--font-size-3);
+    text-align: center;
+    color: var(--inversed-text-color);
 }
 
 .country-picker{
@@ -141,6 +147,10 @@
 
     .single-line-picker{
         font-size: var(--font-size-3);
+    }
+
+    .cart-button__text{
+        font-size: var(--font-size-4);
     }
 }
 

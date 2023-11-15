@@ -24,6 +24,7 @@ a:hover  {
 /* Common */
 
 html{
+    height: 100%;
     overflow-x: hidden;
 }
 
@@ -45,7 +46,7 @@ img {
 }
 
 img, svg {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -89,4 +90,8 @@ label {
 
 legend {
     display: block;
+}
+
+body{
+    height: 100%;
 }

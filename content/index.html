@@ -12,6 +12,7 @@
 
     <link href="../global/components/header/header.css" rel="stylesheet" type="text/css">
     <link href="../global/components/header/hamburger-menu.css" rel="stylesheet" type="text/css">
+    <link href="../global/components/header/hamburger-animation.css" rel="stylesheet" type="text/css">
     <link href="../global/components/footer/footer.css" rel="stylesheet" type="text/css">
     <link href="../global/components/buttons/circle-button.css" rel="stylesheet" type="text/css">
     <link href="../global/components/content-flow/block-flow.css" rel="stylesheet" type="text/css">
@@ -22,8 +23,8 @@
     <title>COPY COPY</title>
 </head>
 <body>
-<div>
-    <header>
+<div id="_root">
+    <header style="z-index: 9; position: relative">
         <div class="content-block__wrapper global-header">
             <div class="header-gutter">
                 <nav class="header-back">
@@ -82,49 +83,41 @@
                             </div>
                         </div>
                         <div class="header__hamburger-wrapper">
-                                    <span class="vertical-center">
-                                        <button class="header__hamburger" style="min-width: 44px; min-height: 44px">
-                                            <svg aria-hidden="true" class="vertical-align-middle absolute-center"
-                                                 focusable="false" preserveAspectRatio="xMidYMid meet"
-                                                 style="width: 24px; height: 24px; overflow: visible; fill: currentColor"
-                                                 viewBox="0 0 24 24">
-                                                <path class="hamburger-icon__animation hamburger-icon__animation-outer-lines"
-                                                      d="M21,6.9H3C2.5,6.9,2.1,6.5,2.1,6S2.5,5.1,3,5.1h18c0.5,0,0.9,0.4,0.9,0.9S21.5,6.9,21,6.9z"></path>
-                                                <path class="hamburger-icon__animation"
-                                                      d="M21,12.9H3c-0.5,0-0.9-0.4-0.9-0.9s0.4-0.9,0.9-0.9h18c0.5,0,0.9,0.4,0.9,0.9S21.5,12.9,21,12.9z"></path>
-                                                <path class="hamburger-icon__animation hamburger-icon__animation-outer-lines"
-                                                      d="M21,18.9H3c-0.5,0-0.9-0.4-0.9-0.9s0.4-0.9,0.9-0.9h18c0.5,0,0.9,0.4,0.9,0.9S21.5,18.9,21,18.9z"></path>
-                                                <circle class="hover-effect" cx="50%" cy="50%" fill="transparent"
-                                                        r="75%"></circle>
-                                            </svg>
-                                        </button>
-                                    </span>
+                            <span class="vertical-center">
+                                <button class="header__hamburger" style="min-width: 44px; min-height: 44px" onclick="" id="header-hamburger">
+                                    <svg aria-hidden="true" class="vertical-align-middle absolute-center"
+                                         focusable="false" preserveAspectRatio="xMidYMid meet"
+                                         style="width: 24px; height: 24px; overflow: visible; fill: currentColor"
+                                         viewBox="0 0 24 24" id="hamburger-icon">
+                                        <path class="hamburger-icon__animation hamburger-icon__line hamburger-icon__line--upper CLOSED"
+                                              d="M21,6.9H3C2.5,6.9,2.1,6.5,2.1,6S2.5,5.1,3,5.1h18c0.5,0,0.9,0.4,0.9,0.9S21.5,6.9,21,6.9z" id="upper-line"></path>
+                                        <path class="hamburger-icon__animation hamburger-icon__line hamburger-icon__line--middle CLOSED"
+                                              d="M21,12.9H3c-0.5,0-0.9-0.4-0.9-0.9s0.4-0.9,0.9-0.9h18c0.5,0,0.9,0.4,0.9,0.9S21.5,12.9,21,12.9z" id="middle-line"></path>
+                                        <path class="hamburger-icon__animation hamburger-icon__line hamburger-icon__line--bottom CLOSED"
+                                              d="M21,18.9H3c-0.5,0-0.9-0.4-0.9-0.9s0.4-0.9,0.9-0.9h18c0.5,0,0.9,0.4,0.9,0.9S21.5,18.9,21,18.9z" id="bottom-line"></path>
+                                        <circle class="hover-effect" cx="50%" cy="50%" fill="transparent"
+                                                r="75%"></circle>
+                                    </svg>
+                                </button>
+                            </span>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
-        <!--            <div class="hamburger-menu-mask"></div>                     -->
-        <div class="hamburger-menu__back hidden">
+        <div class="hamburger-menu__mask" aria-disabled="true" id="hamburger-menu-mask"></div>
+        <div class="hamburger-menu__back" aria-disabled="true" id="hamburger-menu">
             <div class="hamburger-menu__wrapper">
                 <div class="hamburger-menu">
                     <ul class="hamburger-menu__navigation">
                         <li class="hamburger-menu__button-wrapper">
-                            <button class="hamburger-menu__button expandable" onclick="">
-                                <svg aria-hidden="true" class="vertical-align-middle" focusable="false"
-                                     preserveAspectRatio="xMidYMid meet"
-                                     style="width:24px;height:24px;overflow:visible;fill:currentColor"
-                                     viewBox="0 0 24 24">
-                                    <path d="M8.902 17.656c-.293.293-.293.768 0 1.06.293.294.768.294 1.06 0L16.38 12.3c.293-.293.293-.768 0-1.06L9.86 4.72c-.293-.293-.767-.293-1.06 0-.293.293-.293.767 0 1.06l5.99 5.99L8.9 17.656z"></path>
-                                </svg>
-                                <span>Menu</span>
-                            </button>
+                            <a class="hamburger-menu__button no-decoration" href="sections/menu/menu.html">Menu</a>
                         </li>
                         <li class="hamburger-menu__button-wrapper">
-                            <a class="hamburger-menu__button no-decoration" href="/">Rewards</a>
+                            <a class="hamburger-menu__button no-decoration" href="sections/rewards/rewards.html">Rewards</a>
                         </li>
                         <li class="hamburger-menu__button-wrapper">
-                            <a class="hamburger-menu__button no-decoration" href="/">Gift Cards</a>
+                            <a class="hamburger-menu__button no-decoration" href="sections/gift-cards/gift-cards.html">Gift Cards</a>
                         </li>
                     </ul>
                     <hr class="hamburger-menu__separator">
@@ -156,11 +149,11 @@
             </div>
         </div>
     </header>
-    <main>
+    <main style="z-index: 4; position: relative">
         <div class="block-content-flow" id="posts-parent">
         </div>
     </main>
-    <footer>
+    <footer style="z-index: 1; position: relative">
         <div class="footer__back">
             <div class="footer__wrapper">
                 <div class="footer">
@@ -493,5 +486,6 @@
     </footer>
 </div>
 <script src="dynamic-content/scripts/createPromo.js" type="module"></script>
+<script src="../global/components/header/scripts/hamburgerMenu.js" type="module"></script>
 </body>
 </html>

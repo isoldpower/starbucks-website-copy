@@ -127,19 +127,6 @@ header{
     margin-right: var(--gutter-small);
 }
 
-.hamburger-menu-mask{
-    z-index: 2;
-    position: fixed;
-
-    left: 0;
-    width: 100%;
-    top: var(--header-height);
-    height: calc(100% - var(--header-height));
-
-    background-color: black;
-    opacity: 0.38;
-}
-
 .header__hamburger{
     position: relative;
     color: var(--black-60);
