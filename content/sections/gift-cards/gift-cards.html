@@ -783,23 +783,50 @@
         </div>
     </main>
     <footer style="z-index: 1; position: relative">
-        <div class="footer__back rewards">
+        <div class="footer__back footer__back--double-padding">
             <div class="footer__wrapper global-gutters global-gutters--logo-offset">
                 <div class="footer">
                     <nav class="footer__navigation">
                         <div class="footer__first-section">
                             <div class="footer__small-row">
                                 <h2 class="footer__section-preview">
-                                    <button class="footer__expand-button">
+                                    <button class="footer__expand-button" aria-controls="caret-expander1" aria-expanded="false">
                                         <span>About Us</span>
                                         <svg aria-hidden="true" class="footer__expand-arrow vertical-align-middle"
                                              focusable="false" preserveAspectRatio="xMidYMid meet"
                                              style="width:32px;height:32px;overflow:visible;fill:currentColor"
-                                             viewBox="0 0 24 24">
+                                             viewBox="0 0 24 24" id="expandable-arrow">
                                             <path d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"></path>
                                         </svg>
                                     </button>
                                 </h2>
+                                <div class="footer__expander footer__expander--overflow" style="height: 0" id="caret-expander1">
+                                    <div class="expander__content hidden">
+                                        <ul class="expander__links-wrapper">
+                                            <li>
+                                                <a class="expander__link">Our Company</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">Our Coffee</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">Stories and News</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">Starbucks Archive</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">Investor Relations</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">Customer Service</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">Contact Us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div class="footer__large-column">
                                 <h2 class="footer__column-header">About Us</h2>
@@ -838,16 +865,40 @@
                         <div>
                             <div class="footer__small-row">
                                 <h2 class="footer__section-preview">
-                                    <button class="footer__expand-button">
-                                        <span class="footer__expand-button-text">Careers</span>
+                                    <button class="footer__expand-button" aria-controls="caret-expander2" aria-expanded="false">
+                                        <span>Careers</span>
                                         <svg aria-hidden="true" class="footer__expand-arrow vertical-align-middle"
                                              focusable="false" preserveAspectRatio="xMidYMid meet"
                                              style="width:32px;height:32px;overflow:visible;fill:currentColor"
-                                             viewBox="0 0 24 24">
+                                             viewBox="0 0 24 24" id="expandable-arrow">
                                             <path d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"></path>
                                         </svg>
                                     </button>
                                 </h2>
+                                <div class="footer__expander footer__expander--overflow" style="height: 0" id="caret-expander2">
+                                    <div class="expander__content hidden">
+                                        <ul class="expander__links-wrapper">
+                                            <li>
+                                                <a class="expander__link">Culture and Values</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">Inclusion, Diversity, and Equity</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">College Achievement Plan</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">Alumni Community</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">U.S. Careers</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">International Careers</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div class="footer__large-column">
                                 <h2 class="footer__column-header">Careers</h2>
@@ -886,16 +937,31 @@
                         <div>
                             <div class="footer__small-row">
                                 <h2 class="footer__section-preview">
-                                    <button class="footer__expand-button">
-                                        <span class="footer__expand-button-text">Social Impact</span>
+                                    <button class="footer__expand-button" aria-controls="caret-expander3" aria-expanded="false">
+                                        <span>Social Impact</span>
                                         <svg aria-hidden="true" class="footer__expand-arrow vertical-align-middle"
                                              focusable="false" preserveAspectRatio="xMidYMid meet"
                                              style="width:32px;height:32px;overflow:visible;fill:currentColor"
-                                             viewBox="0 0 24 24">
+                                             viewBox="0 0 24 24" id="expandable-arrow">
                                             <path d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"></path>
                                         </svg>
                                     </button>
                                 </h2>
+                                <div class="footer__expander footer__expander--overflow" style="height: 0" id="caret-expander3">
+                                    <div class="expander__content hidden">
+                                        <ul class="expander__links-wrapper">
+                                            <li>
+                                                <a class="expander__link">People</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">Planet</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">Environmental and Social Impact Reporting</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div class="footer__large-column">
                                 <h2 class="footer__column-header">Social Impact</h2>
@@ -919,16 +985,34 @@
                         <div>
                             <div class="footer__small-row">
                                 <h2 class="footer__section-preview">
-                                    <button class="footer__expand-button">
-                                        <span class="footer__expand-button-text">For Business Partners</span>
+                                    <button class="footer__expand-button" aria-controls="caret-expander4" aria-expanded="false">
+                                        <span>For Business Partners</span>
                                         <svg aria-hidden="true" class="footer__expand-arrow vertical-align-middle"
                                              focusable="false" preserveAspectRatio="xMidYMid meet"
                                              style="width:32px;height:32px;overflow:visible;fill:currentColor"
-                                             viewBox="0 0 24 24">
+                                             viewBox="0 0 24 24" id="expandable-arrow">
                                             <path d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"></path>
                                         </svg>
                                     </button>
                                 </h2>
+                                <div class="footer__expander footer__expander--overflow" style="height: 0" id="caret-expander4">
+                                    <div class="expander__content hidden">
+                                        <ul class="expander__links-wrapper">
+                                            <li>
+                                                <a class="expander__link">Landlord Support Center</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">Suppliers</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">Corporate Gift Card Sales</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">Office and Foodservice Coffee</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div class="footer__large-column">
                                 <h2 class="footer__column-header">For Business Partners</h2>
@@ -958,16 +1042,37 @@
                         <div class="footer__last-section">
                             <div class="footer__small-row">
                                 <h2 class="footer__section-preview">
-                                    <button class="footer__expand-button">
-                                        <span class="footer__expand-button-text">Order and Pick Up</span>
+                                    <button class="footer__expand-button" aria-controls="caret-expander5" aria-expanded="false">
+                                        <span>Order and Pick Up</span>
                                         <svg aria-hidden="true" class="footer__expand-arrow vertical-align-middle"
                                              focusable="false" preserveAspectRatio="xMidYMid meet"
                                              style="width:32px;height:32px;overflow:visible;fill:currentColor"
-                                             viewBox="0 0 24 24">
+                                             viewBox="0 0 24 24" id="expandable-arrow">
                                             <path d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"></path>
                                         </svg>
                                     </button>
                                 </h2>
+                                <div class="footer__expander footer__expander--overflow" style="height: 0" id="caret-expander5">
+                                    <div class="expander__content hidden">
+                                        <ul class="expander__links-wrapper">
+                                            <li>
+                                                <a class="expander__link">Order on the App</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">Order on the Web</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">Delivery</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">Order and Pick Up Options</a>
+                                            </li>
+                                            <li>
+                                                <a class="expander__link">Explore and Find Coffee for Home</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div class="footer__large-column">
                                 <h2 class="footer__column-header">Order and Pick Up</h2>
@@ -1115,5 +1220,6 @@
     </footer>
 </div>
 <script src="../../../global/components/header/scripts/hamburgerMenu.js" type="module"></script>
+<script src="../../../global/components/footer/scripts/footerExpand.js" type="module"></script>
 </body>
 </html>
