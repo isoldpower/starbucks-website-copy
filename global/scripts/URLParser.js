@@ -12,6 +12,14 @@ class URLParser{
     static getElementByID(element, id){
         return element.querySelector("#" + id);
     }
+
+    static getElementsByAttribute(element, attribute, value){
+        return element.querySelectorAll("[" + attribute + "= '" + value + "']");
+    }
+
+    static getElementByAttribute(element, attribute, value){
+        return element.querySelector("[" + attribute + "= '" + value + "']");
+    }
 }
 
 export default URLParser;

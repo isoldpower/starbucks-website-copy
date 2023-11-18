@@ -1,6 +1,7 @@
 .gift-card__wrapper{
     width: 50%;
     white-space: normal;
+    transition: opacity 0.2s ease;
 }
 
 .gift-card__wrapper[aria-hidden="true"]{
@@ -11,18 +12,39 @@
 .gift-card{
     position: relative;
     display: block;
+    transition: transform 0.3s ease;
 }
 
-.gift-card::before{
+.gift-card:hover{
+    transform: translateY(-8px);
+}
+
+.gift-card::before, .gift-card::after{
     content: "";
     position: absolute;
-    opacity: 1;
     bottom: 0;
     left: 0;
     right: 0;
     top: 0;
     border-radius: 4%;
+}
+
+.gift-card::before{
+    opacity: 1;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.24);
+}
+
+.gift-card:hover::before{
+    opacity: 0;
+}
+
+.gift-card::after{
+    opacity: 0;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.14);
+}
+
+.gift-card:hover::after{
+    opacity: 1;
 }
 
 .gift-card img{

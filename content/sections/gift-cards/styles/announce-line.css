@@ -82,10 +82,6 @@
 
 @media (min-width: 1280px) {
 
-    .announce-line__content{
-        display: flex;
-    }
-
     .announce-line__terms{
         margin-left: auto;
         width: auto;

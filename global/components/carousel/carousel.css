@@ -11,8 +11,13 @@
 
 .carousel__arrow{
     z-index: 1;
+    transition-delay: 0.1s;
     padding-top: var(--space-2);
     padding-bottom: var(--space-2);
+}
+
+.carousel__arrow[aria-disabled="true"] > *{
+    display: none;
 }
 
 .carousel__button {
@@ -46,17 +51,19 @@
 
 .gift-cards__group-list{
     white-space: nowrap;
+    transition: transform 0.3s ease-in-out;
     position: relative;
 }
 
 @media (min-width: 480px) {
-    .gift-cards__carousel{
+
+    .gift-cards__carousel {
         padding-right: var(--space-9);
     }
 }
 
 @media (min-width: 1024px) {
-    .carousel__arrow{
+    .carousel__arrow {
         padding-left: var(--logo__offset-large);
     }
 
